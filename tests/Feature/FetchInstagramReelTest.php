@@ -42,7 +42,18 @@ class FetchInstagramReelTest extends TestCase
         $response->assertStatus(200)
             ->assertJson([
                 'success' => true,
-                'data' => $mockedResult,
+                'data' => [
+                    'id' => 'C9xYzABC123',
+                    'type' => 'video',
+                    'title' => 'Test Instagram Reel Title',
+                    'video_url' => route('tools.stream-video', ['url' => 'https://instagram.example.com/video.mp4']),
+                    'thumbnail_url' => route('tools.proxy-image', ['url' => 'https://instagram.example.com/thumbnail.jpg']),
+                    'duration' => 15,
+                    'owner' => [
+                        'username' => 'test_user',
+                        'full_name' => 'Test Creator',
+                    ]
+                ],
             ]);
     }
 
