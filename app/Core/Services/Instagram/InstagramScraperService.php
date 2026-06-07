@@ -17,10 +17,30 @@ class InstagramScraperService
      */
     public function scrape(string $url): array
     {
-        $binary = config('tools.instagram.ytdlp_binary_path');
+        $usePython = config('tools.instagram.ytdlp_use_python', true);
 
-        if (!file_exists($binary)) {
-            throw new ToolExecutionException("Scraping binary not found at [{$binary}]. Please verify configuration.", 500);
+        if ($usePython) {
+            $command = [
+                'python',
+                '-m',
+                'yt_dlp',
+                '--dump-json',
+                '--no-warnings',
+                '--no-playlist',
+                $url
+            ];
+        } else {
+            $binary = config('tools.instagram.ytdlp_binary_path');
+            if (!file_exists($binary)) {
+                throw new ToolExecutionException("Scraping binary not found at [{$binary}]. Please verify configuration.", 500);
+            }
+            $command = [
+                $binary,
+                '--dump-json',
+                '--no-warnings',
+                '--no-playlist',
+                $url
+            ];
         }
 
         $tmpDir = storage_path('app/tmp');
@@ -28,15 +48,8 @@ class InstagramScraperService
             mkdir($tmpDir, 0755, true);
         }
 
-        // Build command executing: bin/yt-dlp.exe --dump-json --no-warnings --no-playlist "URL"
-        // Explicitly set TEMP/TMP env variables so PyInstaller can unpack successfully
-        $process = new Process([
-            $binary,
-            '--dump-json',
-            '--no-warnings',
-            '--no-playlist',
-            $url
-        ], null, [
+        // Explicitly set TEMP/TMP env variables so PyInstaller or Python temp files unpack cleanly
+        $process = new Process($command, null, [
             'TEMP' => $tmpDir,
             'TMP' => $tmpDir,
         ]);
