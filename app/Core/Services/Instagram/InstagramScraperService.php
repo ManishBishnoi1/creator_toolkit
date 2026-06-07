@@ -48,11 +48,15 @@ class InstagramScraperService
             mkdir($tmpDir, 0755, true);
         }
 
-        // Explicitly set TEMP/TMP env variables so PyInstaller or Python temp files unpack cleanly
-        $process = new Process($command, null, [
+        // Inherit parent environment variables (like SystemRoot and PATH) and merge custom TEMP/TMP.
+        // This is crucial on Windows to ensure Python can load DLL dependencies (Winsock).
+        $parentEnv = is_array(getenv()) ? getenv() : [];
+        $env = array_merge($_SERVER, $parentEnv, [
             'TEMP' => $tmpDir,
             'TMP' => $tmpDir,
         ]);
+
+        $process = new Process($command, null, $env);
 
         $process->setTimeout(config('tools.instagram.scraping_timeout', 30));
 
