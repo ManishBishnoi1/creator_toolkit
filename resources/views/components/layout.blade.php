@@ -20,6 +20,54 @@
 
     <!-- Alpine.js -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <style>
+        /* FOUC (Flash of Unstyled Content) Prevention */
+        body {
+            background-color: #050505;
+            color: #e2e1eb;
+            font-family: 'Inter', sans-serif;
+            opacity: 0;
+            transition: opacity 0.15s ease-in-out;
+        }
+        body.loaded {
+            opacity: 1;
+        }
+        .bg-glow-container {
+            position: fixed;
+            inset: 0;
+            z-index: -10;
+            overflow: hidden;
+            pointer-events: none;
+            background-color: #050505;
+        }
+        .bg-glow {
+            position: absolute;
+            width: 800px;
+            height: 800px;
+            filter: blur(80px);
+            opacity: 0.15;
+            border-radius: 50%;
+        }
+        .bg-glow-purple {
+            background: radial-gradient(circle, #d0bcff 0%, transparent 70%);
+            top: -10%;
+            left: -10%;
+        }
+        .bg-glow-blue {
+            background: radial-gradient(circle, #adc6ff 0%, transparent 70%);
+            bottom: -10%;
+            right: -10%;
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body class="bg-background text-on-surface selection:bg-secondary/30 selection:text-white antialiased">
 
@@ -69,6 +117,11 @@
     if (window.scrollY > 40) {
         nav.classList.add('bg-black/60', 'backdrop-blur-lg', 'border-white/10', 'shadow-2xl', 'py-2');
     }
+
+    // Add loaded class to body to reveal content once styles compile
+    document.addEventListener("DOMContentLoaded", function() {
+        document.body.classList.add('loaded');
+    });
 </script>
 </body>
 </html>
