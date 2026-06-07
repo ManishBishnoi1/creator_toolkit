@@ -23,12 +23,9 @@ class ToolController extends Controller
         try {
             $result = $action->execute($request->input('url'));
             
-            // Map direct Instagram CDN URLs to local proxy/stream routes to bypass hotlinking blocks
-            if (!empty($result['thumbnail_url'])) {
+            // If the thumbnail is a remote URL, we proxy it to avoid blocks, otherwise we keep the local asset URL
+            if (!empty($result['thumbnail_url']) && str_starts_with($result['thumbnail_url'], 'http') && !str_contains($result['thumbnail_url'], request()->getHost())) {
                 $result['thumbnail_url'] = route('tools.proxy-image', ['url' => $result['thumbnail_url']]);
-            }
-            if (!empty($result['video_url'])) {
-                $result['video_url'] = route('tools.stream-video', ['url' => $result['video_url']]);
             }
 
             return response()->json([
@@ -55,7 +52,9 @@ class ToolController extends Controller
         }
 
         try {
-            $response = \Illuminate\Support\Facades\Http::withHeaders([
+            $response = \Illuminate\Support\Facades\Http::withOptions([
+                'verify' => false, // Bypass SSL verification for local cert bundle issues
+            ])->withHeaders([
                 'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
             ])->get($url);
 
@@ -73,34 +72,34 @@ class ToolController extends Controller
     }
 
     /**
-     * Stream Instagram Reel MP4 video files chunk-by-chunk to the client.
+     * Download the locally stored high-quality MP4 file.
      */
-    public function streamVideo(Request $request)
+    public function downloadVideo(string $id)
     {
-        $url = $request->query('url');
-
-        if (empty($url) || !filter_var($url, FILTER_VALIDATE_URL)) {
-            abort(400, 'Invalid URL provided.');
+        // Sanitize the ID to prevent path traversal
+        $id = basename($id);
+        
+        $filePath = storage_path("app/public/reels/{$id}.mp4");
+        
+        if (!file_exists($filePath)) {
+            abort(404, 'Video file not found.');
         }
 
-        return response()->stream(function () use ($url) {
-            $client = new \GuzzleHttp\Client();
-            $response = $client->request('GET', $url, [
-                'stream' => true,
-                'headers' => [
-                    'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-                ],
-            ]);
-
-            $body = $response->getBody();
-
-            while (!$body->eof()) {
-                echo $body->read(1024 * 8); // 8KB chunks
-                flush();
+        // Retrieve title metadata from the .info.json if available to give it a nice name
+        $fileName = "instagram_reel_{$id}.mp4";
+        $jsonPath = storage_path("app/public/reels/{$id}.info.json");
+        if (file_exists($jsonPath)) {
+            $jsonData = json_decode(file_get_contents($jsonPath), true);
+            if (!empty($jsonData['title'])) {
+                // Sanitize filename to prevent special characters breaking headers
+                $cleanTitle = preg_replace('/[^A-Za-z0-9_-]/', '_', $jsonData['title']);
+                $cleanTitle = substr($cleanTitle, 0, 50); // limit length
+                $fileName = "{$cleanTitle}_{$id}.mp4";
             }
-        }, 200, [
+        }
+
+        return response()->download($filePath, $fileName, [
             'Content-Type' => 'video/mp4',
-            'Content-Disposition' => 'attachment; filename="instagram_reel.mp4"',
         ]);
     }
 

@@ -120,7 +120,9 @@
 
     // Add loaded class to body to reveal content once styles compile
     document.addEventListener("DOMContentLoaded", function() {
-        document.body.classList.add('loaded');
+        setTimeout(function() {
+            document.body.classList.add('loaded');
+        }, 150);
     });
 </script>
 </body>

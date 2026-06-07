@@ -51,7 +51,7 @@
                 <p class="text-[10px] text-on-surface-variant" x-text="result?.duration + 's duration'"></p>
             </div>
             <div class="flex gap-2 pt-4 sm:pt-0">
-                <a :href="result?.video_url" target="_blank" download="reel.mp4" class="gradient-btn px-4 py-2 rounded-lg font-label-md text-xs text-center cursor-pointer flex-grow sm:flex-grow-0">
+                <a :href="result?.video_url" class="gradient-btn px-4 py-2 rounded-lg font-label-md text-xs text-center cursor-pointer flex-grow sm:flex-grow-0">
                     Save MP4
                 </a>
                 <button type="button" @click="resetForm" class="glass px-4 py-2 rounded-lg font-label-md text-xs text-center text-white hover:bg-white/10 flex-grow sm:flex-grow-0 cursor-pointer">
