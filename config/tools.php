@@ -35,6 +35,10 @@ return [
         'python_binary' => env('PYTHON_BINARY', 'python'),
         'ffmpeg_path' => env('FFMPEG_PATH'),
         'ytdlp_binary_path' => env('YTDLP_BINARY_PATH', base_path('bin/yt-dlp.exe')),
+        'cloudinary_cloud_name' => env('CLOUDINARY_CLOUD_NAME'),
+        'cloudinary_api_key' => env('CLOUDINARY_API_KEY'),
+        'cloudinary_api_secret' => env('CLOUDINARY_API_SECRET'),
+        'cache_expiration_minutes' => (int) env('REELS_CACHE_EXPIRATION_MINUTES', 10),
     ],
 
     'ai' => [

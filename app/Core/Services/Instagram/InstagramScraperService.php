@@ -160,6 +160,55 @@ class InstagramScraperService
                 throw new ToolExecutionException("Failed to decode JSON response from local metadata.", 500);
             }
 
+            // Cloudinary Integration
+            $cloudinaryCloud = config('tools.instagram.cloudinary_cloud_name');
+            $cloudinaryKey = config('tools.instagram.cloudinary_api_key');
+            $cloudinarySecret = config('tools.instagram.cloudinary_api_secret');
+            $useCloudinary = !empty($cloudinaryCloud) && !empty($cloudinaryKey) && !empty($cloudinarySecret);
+
+            if ($useCloudinary && file_exists($mp4File)) {
+                try {
+                    $timestamp = time();
+                    $params = [
+                        'public_id' => $reelId,
+                        'timestamp' => $timestamp,
+                    ];
+                    ksort($params);
+                    $paramString = http_build_query($params);
+                    $signature = sha1($paramString . $cloudinarySecret);
+
+                    $response = \Illuminate\Support\Facades\Http::asMultipart()->post(
+                        "https://api.cloudinary.com/v1_1/{$cloudinaryCloud}/video/upload",
+                        [
+                            'file' => fopen($mp4File, 'r'),
+                            'public_id' => $reelId,
+                            'timestamp' => $timestamp,
+                            'api_key' => $cloudinaryKey,
+                            'signature' => $signature,
+                        ]
+                    );
+
+                    if ($response->successful()) {
+                        $uploadData = $response->json();
+                        $cloudinaryUrl = $uploadData['secure_url'] ?? '';
+                        if (!empty($cloudinaryUrl)) {
+                            // Insert fl_attachment into the URL for forcing browser download
+                            $cloudinaryUrl = str_replace('/video/upload/', '/video/upload/fl_attachment/', $cloudinaryUrl);
+                        }
+                        
+                        $jsonData['cloudinary_url'] = $cloudinaryUrl;
+                        $jsonData['cloudinary_public_id'] = $uploadData['public_id'] ?? $reelId;
+                        
+                        // Rewrite JSON file with Cloudinary details
+                        file_put_contents($jsonFile, json_encode($jsonData));
+                    } else {
+                        Log::error("Cloudinary upload failed for Reel [{$reelId}]. Response: " . $response->body());
+                    }
+                } catch (\Exception $e) {
+                    Log::error("Cloudinary upload exception for Reel [{$reelId}]: " . $e->getMessage());
+                }
+            }
+
             // Map and return standard scraper interface
             return $this->formatScraperResult($reelId, $jsonData);
 
@@ -191,8 +240,12 @@ class InstagramScraperService
             $thumbnailUrl = $data['thumbnail'] ?? '';
         }
 
-        // Generate download URL using the dedicated download route
-        $videoUrl = route('tools.download-video', ['id' => $reelId]);
+        // Generate download URL using the dedicated download route or Cloudinary URL
+        if (!empty($data['cloudinary_url'])) {
+            $videoUrl = $data['cloudinary_url'];
+        } else {
+            $videoUrl = route('tools.download-video', ['id' => $reelId]);
+        }
 
         return [
             'id' => $reelId,

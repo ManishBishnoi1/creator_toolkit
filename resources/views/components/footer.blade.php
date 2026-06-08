@@ -9,9 +9,9 @@
         </div>
         
         <!-- Logo -->
-        <a href="/" class="flex items-center gap-0.5 font-display text-lg font-bold mt-2">
-            <span class="bg-gradient-to-r from-[#e100ff] to-[#00b8ff] bg-clip-text text-transparent font-extrabold text-sm">SSS</span>
-            <span class="text-slate-800 text-sm">Instagram</span>
+        <a href="/" class="flex items-center gap-1.5 font-display text-lg font-bold mt-2">
+            <img src="{{ asset('images/logo.png') }}" alt="SSS Instagram Logo" class="h-6 w-auto">
+            <span class="text-slate-800 text-sm font-black">SSS Instagram</span>
         </a>
         
         <!-- Copyright -->

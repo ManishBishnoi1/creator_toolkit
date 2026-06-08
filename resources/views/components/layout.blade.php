@@ -8,6 +8,12 @@
     <title>{{ $title ?? \App\Core\Helpers\SEOHelper::title() }}</title>
     <meta name="description" content="{{ $description ?? \App\Core\Helpers\SEOHelper::description() }}">
     <meta name="keywords" content="{{ $keywords ?? \App\Core\Helpers\SEOHelper::keywords() }}">
+    
+    <!-- Tab Icon (Favicon) -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/logo.png') }}"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/logo.png') }}"/>
+    <link rel="icon" type="image/png" sizes="48x48" href="{{ asset('images/logo.png') }}"/>
+    <link rel="apple-touch-icon" href="{{ asset('images/logo.png') }}"/>
 
     <!-- Google Fonts & Material Symbols -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

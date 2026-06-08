@@ -4,9 +4,9 @@
         <div class="w-16"></div>
         
         <!-- Centered Logo -->
-        <a href="/" class="flex items-center gap-1 font-display text-2xl font-black tracking-tight">
-            <span class="bg-gradient-to-r from-[#e100ff] to-[#00b8ff] bg-clip-text text-transparent font-extrabold">SSS</span>
-            <span class="text-slate-800">Instagram</span>
+        <a href="/" class="flex items-center gap-2 font-display text-2xl font-black tracking-tight">
+            <img src="{{ asset('images/logo.png') }}" alt="SSS Instagram Logo" class="h-8 w-auto">
+            <span class="text-slate-800">SSS Instagram</span>
         </a>
         
         <!-- Right-aligned Language Selection -->
