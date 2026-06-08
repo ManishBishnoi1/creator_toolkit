@@ -47,7 +47,7 @@ class InstagramScraperService
 
         if ($usePython) {
             $command = [
-                'python',
+                'python3',
                 '-m',
                 'yt_dlp',
             ];
