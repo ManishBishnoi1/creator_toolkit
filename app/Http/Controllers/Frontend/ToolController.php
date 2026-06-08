@@ -23,8 +23,9 @@ class ToolController extends Controller
         try {
             $result = $action->execute($request->input('url'));
             
-            // If the thumbnail is a remote URL, we proxy it to avoid blocks, otherwise we keep the local asset URL
-            if (!empty($result['thumbnail_url']) && str_starts_with($result['thumbnail_url'], 'http') && !str_contains($result['thumbnail_url'], request()->getHost())) {
+            // If the thumbnail is a remote URL, we proxy it to avoid blocks, otherwise we keep the local asset URL.
+            // Bypasses proxying for Cloudinary URLs since they allow direct hotlinking.
+            if (!empty($result['thumbnail_url']) && str_starts_with($result['thumbnail_url'], 'http') && !str_contains($result['thumbnail_url'], request()->getHost()) && !str_contains($result['thumbnail_url'], 'res.cloudinary.com')) {
                 $result['thumbnail_url'] = route('tools.proxy-image', ['url' => $result['thumbnail_url']]);
             }
 

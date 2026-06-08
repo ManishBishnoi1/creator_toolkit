@@ -95,6 +95,36 @@ class ClearReelsCache extends Command
                                 Log::error("Failed to delete video [{$publicId}] from Cloudinary: " . $response->body());
                             }
                         }
+
+                        // Call Cloudinary destroy API for thumbnail image if it exists
+                        if ($hasCloudinary && !empty($content['cloudinary_thumbnail_public_id'])) {
+                            $thumbPublicId = $content['cloudinary_thumbnail_public_id'];
+                            
+                            $timestamp = time();
+                            $destroyParams = [
+                                'public_id' => $thumbPublicId,
+                                'timestamp' => $timestamp,
+                            ];
+                            ksort($destroyParams);
+                            $destroyParamString = http_build_query($destroyParams);
+                            $destroySignature = sha1($destroyParamString . $cloudinarySecret);
+
+                            $response = Http::post(
+                                "https://api.cloudinary.com/v1_1/{$cloudinaryCloud}/image/destroy",
+                                [
+                                    'public_id' => $thumbPublicId,
+                                    'timestamp' => $timestamp,
+                                    'api_key' => $cloudinaryKey,
+                                    'signature' => $destroySignature,
+                                ]
+                            );
+
+                            if ($response->successful() && ($response->json()['result'] ?? '') === 'ok') {
+                                $deletedCloudinaryCount++;
+                            } else {
+                                Log::error("Failed to delete thumbnail [{$thumbPublicId}] from Cloudinary: " . $response->body());
+                            }
+                        }
                     } catch (\Exception $e) {
                         Log::error("Error reading JSON or deleting from Cloudinary for Reel [{$reelId}]: " . $e->getMessage());
                     }

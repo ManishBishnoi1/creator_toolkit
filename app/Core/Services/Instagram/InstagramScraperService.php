@@ -177,53 +177,105 @@ class InstagramScraperService
             $cloudinarySecret = config('tools.instagram.cloudinary_api_secret');
             $useCloudinary = !empty($cloudinaryCloud) && !empty($cloudinaryKey) && !empty($cloudinarySecret);
 
-            if ($useCloudinary && file_exists($mp4File)) {
-                try {
-                    $timestamp = time();
-                    $params = [
-                        'public_id' => $reelId,
-                        'timestamp' => $timestamp,
-                    ];
-                    ksort($params);
-                    $paramString = http_build_query($params);
-                    $signature = sha1($paramString . $cloudinarySecret);
+            if ($useCloudinary) {
+                // 1. Upload Video
+                if (file_exists($mp4File)) {
+                    try {
+                        $timestamp = time();
+                        $params = [
+                            'public_id' => $reelId,
+                            'timestamp' => $timestamp,
+                        ];
+                        ksort($params);
+                        $paramString = http_build_query($params);
+                        $signature = sha1($paramString . $cloudinarySecret);
 
-                    $response = \Illuminate\Support\Facades\Http::asMultipart()
-                        ->attach('file', fopen($mp4File, 'r'), $reelId . '.mp4')
-                        ->post(
-                            "https://api.cloudinary.com/v1_1/{$cloudinaryCloud}/video/upload",
-                            [
-                                'public_id' => $reelId,
-                                'timestamp' => $timestamp,
-                                'api_key' => $cloudinaryKey,
-                                'signature' => $signature,
-                            ]
-                        );
+                        $response = \Illuminate\Support\Facades\Http::asMultipart()
+                            ->attach('file', fopen($mp4File, 'r'), $reelId . '.mp4')
+                            ->post(
+                                "https://api.cloudinary.com/v1_1/{$cloudinaryCloud}/video/upload",
+                                [
+                                    'public_id' => $reelId,
+                                    'timestamp' => $timestamp,
+                                    'api_key' => $cloudinaryKey,
+                                    'signature' => $signature,
+                                ]
+                            );
 
-                    if ($response->successful()) {
-                        $uploadData = $response->json();
-                        $cloudinaryUrl = $uploadData['secure_url'] ?? '';
-                        if (!empty($cloudinaryUrl)) {
-                            // Insert fl_attachment into the URL for forcing browser download
-                            $cloudinaryUrl = str_replace('/video/upload/', '/video/upload/fl_attachment/', $cloudinaryUrl);
+                        if ($response->successful()) {
+                            $uploadData = $response->json();
+                            $cloudinaryUrl = $uploadData['secure_url'] ?? '';
+                            if (!empty($cloudinaryUrl)) {
+                                $cloudinaryUrl = str_replace('/video/upload/', '/video/upload/fl_attachment/', $cloudinaryUrl);
+                            }
+                            
+                            $jsonData['cloudinary_url'] = $cloudinaryUrl;
+                            $jsonData['cloudinary_public_id'] = $uploadData['public_id'] ?? $reelId;
+                            
+                            // Immediately delete local MP4
+                            if (file_exists($mp4File)) {
+                                unlink($mp4File);
+                            }
+                        } else {
+                            Log::error("Cloudinary video upload failed for Reel [{$reelId}]. Response: " . $response->body());
                         }
-                        
-                        $jsonData['cloudinary_url'] = $cloudinaryUrl;
-                        $jsonData['cloudinary_public_id'] = $uploadData['public_id'] ?? $reelId;
-                        
-                        // Rewrite JSON file with Cloudinary details
-                        file_put_contents($jsonFile, json_encode($jsonData));
-
-                        // Immediately delete the local MP4 file to save disk space
-                        if (file_exists($mp4File)) {
-                            unlink($mp4File);
-                        }
-                    } else {
-                        Log::error("Cloudinary upload failed for Reel [{$reelId}]. Response: " . $response->body());
+                    } catch (\Exception $e) {
+                        Log::error("Cloudinary video upload exception for Reel [{$reelId}]: " . $e->getMessage());
                     }
-                } catch (\Exception $e) {
-                    Log::error("Cloudinary upload exception for Reel [{$reelId}]: " . $e->getMessage());
                 }
+
+                // 2. Upload Thumbnail
+                $localThumbnailFile = null;
+                foreach (['jpg', 'jpeg', 'webp', 'png'] as $ext) {
+                    $checkPath = "{$storageDir}/{$reelId}.{$ext}";
+                    if (file_exists($checkPath)) {
+                        $localThumbnailFile = $checkPath;
+                        break;
+                    }
+                }
+
+                if ($localThumbnailFile) {
+                    try {
+                        $timestamp = time();
+                        $params = [
+                            'public_id' => $reelId,
+                            'timestamp' => $timestamp,
+                        ];
+                        ksort($params);
+                        $paramString = http_build_query($params);
+                        $signature = sha1($paramString . $cloudinarySecret);
+
+                        $response = \Illuminate\Support\Facades\Http::asMultipart()
+                            ->attach('file', fopen($localThumbnailFile, 'r'), basename($localThumbnailFile))
+                            ->post(
+                                "https://api.cloudinary.com/v1_1/{$cloudinaryCloud}/image/upload",
+                                [
+                                    'public_id' => $reelId,
+                                    'timestamp' => $timestamp,
+                                    'api_key' => $cloudinaryKey,
+                                    'signature' => $signature,
+                                ]
+                            );
+
+                        if ($response->successful()) {
+                            $uploadData = $response->json();
+                            $jsonData['cloudinary_thumbnail_url'] = $uploadData['secure_url'] ?? '';
+                            $jsonData['cloudinary_thumbnail_public_id'] = $uploadData['public_id'] ?? $reelId;
+
+                            // Immediately delete local thumbnail
+                            if (file_exists($localThumbnailFile)) {
+                                unlink($localThumbnailFile);
+                            }
+                        } else {
+                            Log::error("Cloudinary thumbnail upload failed for Reel [{$reelId}]. Response: " . $response->body());
+                        }
+                    } catch (\Exception $e) {
+                        Log::error("Cloudinary thumbnail upload exception for Reel [{$reelId}]: " . $e->getMessage());
+                    }
+                }
+
+                // Rewrite JSON file with Cloudinary details
+                file_put_contents($jsonFile, json_encode($jsonData));
             }
 
             // Map and return standard scraper interface
@@ -244,11 +296,15 @@ class InstagramScraperService
         $storageDir = storage_path('app/public/reels');
         $thumbnailUrl = '';
 
-        // Dynamically find thumbnail with correct extension
-        foreach (['jpg', 'jpeg', 'webp', 'png'] as $ext) {
-            if (file_exists("{$storageDir}/{$reelId}.{$ext}")) {
-                $thumbnailUrl = asset("storage/reels/{$reelId}.{$ext}");
-                break;
+        // Check for Cloudinary thumbnail URL or dynamically find local thumbnail
+        if (!empty($data['cloudinary_thumbnail_url'])) {
+            $thumbnailUrl = $data['cloudinary_thumbnail_url'];
+        } else {
+            foreach (['jpg', 'jpeg', 'webp', 'png'] as $ext) {
+                if (file_exists("{$storageDir}/{$reelId}.{$ext}")) {
+                    $thumbnailUrl = asset("storage/reels/{$reelId}.{$ext}");
+                    break;
+                }
             }
         }
 
