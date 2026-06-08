@@ -47,7 +47,7 @@ class InstagramScraperService
 
         if ($usePython) {
             $command = [
-                'python3',
+                '/usr/bin/python3',
                 '-m',
                 'yt_dlp',
             ];
@@ -68,7 +68,7 @@ class InstagramScraperService
             '--write-info-json',
             '--write-thumbnail',
             '-f',
-            'bestvideo+bestaudio/best',
+            'best',
             '-o',
             $outputPath,
             $url
