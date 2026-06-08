@@ -31,7 +31,7 @@
                     x-model="url"
                     required
                     class="bg-transparent border-none focus:ring-0 w-full text-slate-800 placeholder:text-slate-400 focus:outline-none text-xs md:text-sm py-3" 
-                    placeholder="Paste link here" 
+                    placeholder="Reel link yaha paste karo..." 
                     type="url"
                 />
                 <!-- Clear Button Inside Input -->
@@ -41,11 +41,11 @@
             </div>
             
             <button type="submit" class="bg-[#e60067] hover:bg-[#c80055] text-white font-bold px-6 md:px-8 py-3.5 rounded-md text-xs tracking-wider uppercase transition-colors whitespace-nowrap cursor-pointer">
-                Download
+                Download Karo
             </button>
         </form>
         <button type="button" @click="pasteLink" class="mt-3 text-xs text-white/80 hover:text-white hover:underline flex items-center gap-1 pl-1 cursor-pointer mx-auto justify-center">
-            <span class="material-symbols-outlined text-[14px]">content_paste</span> Paste from clipboard
+            <span class="material-symbols-outlined text-[14px]">content_paste</span> Clipboard se paste karo
         </button>
         
         <!-- Discover More Links -->
@@ -76,7 +76,7 @@
             <div class="absolute inset-0 rounded-full border-2 border-slate-100"></div>
             <div class="absolute inset-0 rounded-full border-2 border-t-[#e60067] animate-spin"></div>
         </div>
-        <p class="text-xs text-slate-500 font-semibold mt-2">Connecting via proxy rotator and retrieving file link...</p>
+        <p class="text-xs text-slate-500 font-semibold mt-2">Reel extract ho rahi hai, please wait...</p>
     </div>
 
     <!-- Error State -->
@@ -84,9 +84,9 @@
         <div class="flex items-start gap-3">
             <span class="material-symbols-outlined text-red-500">warning</span>
             <div>
-                <p class="text-xs font-bold text-red-800">Scraping Failed</p>
+                <p class="text-xs font-bold text-red-800">Download Nahi Ho Paya</p>
                 <p class="text-[11px] text-red-600 mt-1" x-text="errorMessage">Failed to fetch the reel</p>
-                <button type="button" @click="resetForm" class="text-xs text-[#e60067] hover:underline mt-2 font-bold block cursor-pointer">Try another URL</button>
+                <button type="button" @click="resetForm" class="text-xs text-[#e60067] hover:underline mt-2 font-bold block cursor-pointer">Dosra link try karo</button>
             </div>
         </div>
     </div>
@@ -102,10 +102,10 @@
             </div>
             <div class="flex gap-2 pt-4 sm:pt-0">
                 <a :href="result?.video_url" class="bg-[#e60067] hover:bg-[#c80055] text-white px-5 py-2.5 rounded-lg font-bold text-xs text-center transition-colors cursor-pointer flex-grow sm:flex-grow-0">
-                    Save MP4
+                    MP4 Save Karo
                 </a>
                 <button type="button" @click="resetForm" class="bg-slate-100 hover:bg-slate-200 text-slate-700 px-5 py-2.5 rounded-lg font-bold text-xs text-center transition-colors flex-grow sm:flex-grow-0 cursor-pointer">
-                    Clear
+                    Hatao
                 </button>
             </div>
         </div>

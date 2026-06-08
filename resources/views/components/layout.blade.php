@@ -5,9 +5,8 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ $title ?? \App\Core\Helpers\SEOHelper::title() }}</title>
-    <meta name="description" content="{{ $description ?? \App\Core\Helpers\SEOHelper::description() }}">
-    <meta name="keywords" content="{{ $keywords ?? \App\Core\Helpers\SEOHelper::keywords() }}">
+    <!-- Dynamic SEO Head Tag Component -->
+    <x-seo-meta :title="$title ?? null" :description="$description ?? null" :keywords="$keywords ?? null" />
     
     <!-- Tab Icon (Favicon) -->
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/logo.png') }}"/>

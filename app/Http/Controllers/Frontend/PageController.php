@@ -36,7 +36,7 @@ class PageController extends Controller
 
         // In a real application, we might mail this, queue it, or store in database.
         // For local development, we return a success status message.
-        return back()->with('success', 'Thank you! Your message has been sent successfully. We will get back to you shortly.');
+        return back()->with('success', 'Shukriya! Aapka message hum tak pahunch gaya. Hum jald hi aapse contact karenge.');
     }
 
     /**

@@ -21,3 +21,13 @@ Route::get('/tools/proxy-image', [ToolController::class, 'proxyImage'])->name('t
 Route::get('/tools/download-video/{id}', [ToolController::class, 'downloadVideo'])->name('tools.download-video');
 
 Route::get('/sitemap.xml', [PageController::class, 'sitemap'])->name('pages.sitemap');
+
+// Programmatic SEO Keyword Landing Routes
+use App\Http\Controllers\Frontend\ProgrammaticSEOController;
+
+Route::get('/download-instagram-reels', [ProgrammaticSEOController::class, 'reels'])->name('seo.reels');
+Route::get('/instagram-story-downloader', [ProgrammaticSEOController::class, 'stories'])->name('seo.stories');
+Route::get('/download-reels-without-watermark', [ProgrammaticSEOController::class, 'noWatermark'])->name('seo.no-watermark');
+Route::get('/instagram-video-saver', [ProgrammaticSEOController::class, 'videos'])->name('seo.videos');
+Route::get('/instagram-photo-downloader', [ProgrammaticSEOController::class, 'photos'])->name('seo.photos');
+Route::get('/instagram-carousel-downloader', [ProgrammaticSEOController::class, 'carousel'])->name('seo.carousel');

@@ -3,8 +3,11 @@
     <section class="relative pt-16 pb-20 overflow-hidden bg-gradient-to-r from-[#e100ff] to-[#00b8ff] text-center px-gutter">
         <div class="max-w-4xl mx-auto space-y-4">
             <h1 class="font-display text-3xl md:text-4xl font-extrabold text-white tracking-tight">
-                Instagram Reels Download
+                Instagram Reels ab instantly download karo!
             </h1>
+            <p class="text-sm md:text-base text-white/90 font-medium max-w-2xl mx-auto">
+                No watermark, no login, direct HD download. Bas reel link paste karo aur video save karo.
+            </p>
             
             <!-- Downloader Widget -->
             <x-downloader />
@@ -18,10 +21,10 @@
         <section class="grid md:grid-cols-2 gap-12 items-center">
             <div class="space-y-4 text-left">
                 <h2 class="font-display text-2xl md:text-3xl font-extrabold text-[#1e2b49]">
-                    Instagram Reels Downloader Online
+                    Instagram Reels Downloader Online: Reels Save Karna Hua Ab Super Easy!
                 </h2>
                 <p class="text-sm text-slate-600 leading-relaxed font-normal">
-                    Downloading Instagram Reels has never been easier or safer with our Instagram Reels Downloader. We've designed our tool to help you download raw Reels videos in stunning HD MP4 quality directly to your device's gallery. The best part? It's completely free and works on both Android and iPhone, so you can download Instagram Reels anytime, anywhere.
+                    Instagram Reels download karna ab pehle se kahin zyada simple aur safe hai. Humare free downloader tool se aap kisi bhi reel video ko HD MP4 quality me directly apne phone ki gallery ya computer me save kar sakte hain. Sabse badhiya baat? Ye tool 100% free hai, Android aur iPhone dono par smoothly chalta hai, aur aapko koi login ya sign-up karne ki zaroorat nahi padti. Jab bhi koi mazedar reel dikhe, bas link copy karo aur download kar lo!
                 </p>
                 <div class="inline-block bg-blue-50 text-blue-600 text-[10px] font-bold tracking-wider uppercase px-3 py-1.5 rounded">
                     # Photo & Image Sharing
@@ -45,23 +48,23 @@
         <!-- Section 2: How to download Reels from Instagram? (Indigo Card) -->
         <section class="bg-[#5d3be8] text-white rounded-3xl p-8 md:p-12 shadow-xl text-center space-y-10">
             <h2 class="font-display text-2xl md:text-3xl font-extrabold">
-                How to download Reels from Instagram?
+                Instagram se Reels kaise download karein? (3 Simple Steps)
             </h2>
             
             <div class="grid md:grid-cols-3 gap-8 text-left">
                 <!-- Step 1 -->
                 <div class="space-y-2">
-                    <h3 class="font-display text-lg font-bold">1. Copy the URL</h3>
+                    <h3 class="font-display text-lg font-bold">1. Link Copy Karo</h3>
                     <p class="text-xs text-indigo-100 leading-relaxed font-light">
-                        Open the Instagram app or website, go to the photo, video, reels, carousel, or IGTV you want to download. Copy the URL.
+                        Instagram app ya website open karein. Apni pasandida reel video select karke share button par click karein aur reel ka link copy kar lein.
                     </p>
                 </div>
                 
                 <!-- Step 2 -->
                 <div class="space-y-2">
-                    <h3 class="font-display text-lg font-bold">2. Paste the link</h3>
+                    <h3 class="font-display text-lg font-bold">2. Link Paste Karo</h3>
                     <p class="text-xs text-indigo-100 leading-relaxed font-light">
-                        Return to the SSSInstagram website, paste the link into the input field at the top of the page, and click the "Download" button to start downloading.
+                        Wapas humari website par aayein, top par diye gaye input box me link paste karein aur "Download Karo" button par click karein.
                     </p>
                     <div class="inline-block bg-white/10 text-white text-[10px] font-semibold px-2.5 py-1 rounded mt-2">
                         # Computers & Electronics
@@ -70,9 +73,9 @@
                 
                 <!-- Step 3 -->
                 <div class="space-y-2">
-                    <h3 class="font-display text-lg font-bold">3. Download Video Reel</h3>
+                    <h3 class="font-display text-lg font-bold">3. HD Video Save Karo</h3>
                     <p class="text-xs text-indigo-100 leading-relaxed font-light">
-                        Review the results and find the file you want to download. Click the "Download" button. Ready! The file is saved to your device.
+                        Kuch hi seconds me preview mil jayega. Bas quality select karke download button dabaayein aur video seedhe device gallery me save ho jayegi!
                     </p>
                 </div>
             </div>
@@ -94,10 +97,10 @@
             <div class="space-y-4 text-left">
                 <p class="text-xs font-bold text-blue-600 tracking-wider uppercase">Fast and Secure Reels Download</p>
                 <h2 class="font-display text-2xl md:text-3xl font-extrabold text-[#1e2b49]">
-                    Instagram Reels Video Download
+                    Super Fast & Secure Reels Download
                 </h2>
                 <p class="text-sm text-slate-600 leading-relaxed font-normal">
-                    We're not going to spam you with ads or try to sell you stuff—we just want everyone to have access to this amazing service! We provide the fastest speed and best quality. We know what it's like to be frustrated by the limitations that Instagram puts on us, but we also know how important it is for you to be able to get your Instagram reels downloaded in high quality whenever you want. So here's our solution: it's a free tool that lets you download your Instagram reels 100% safely and securely without providing any login details or personal information—and it works in just three simple steps!
+                    Hum aapse koi subscription nahi maangte aur na hi faltu ads se pareshaan karte hain. Humara target simple hai - sabhi creators aur users ko best quality downloading service dena. Instagram ki limitations ko bypass karke high resolution (1080p HD) me bina watermark reel download karein. Ye tool 100% secure hai aur aapka koi personal data ya login information store nahi karta. Full privacy ke saath reels gallery me save karein!
                 </p>
                 <div class="inline-block bg-blue-50 text-blue-600 text-[10px] font-bold tracking-wider uppercase px-3 py-1.5 rounded">
                     # Download Managers
@@ -124,14 +127,14 @@
             <!-- Right side: Content -->
             <div class="space-y-4 text-left">
                 <h3 class="font-display text-xl font-extrabold text-[#1e2b49]">
-                    Download with mobile app
+                    Mobile App Se Fast Download Karo
                 </h3>
                 <p class="text-xs text-slate-500 leading-relaxed">
-                    Only for Android: Download any photos, videos, reels, IGTV in one click! Our app provides fast, high-resolution downloads without watermarks, making it an ideal choice for downloading Instagram content.
+                    Only for Android: One click me photos, videos, reels aur IGTV videos download karein! Humara lightweight app bina kisi watermark ke top quality download speed deta hai. App install karein aur content offline enjoy karein.
                 </p>
                 <button type="button" class="bg-[#e60067] hover:bg-[#c80055] text-white font-bold text-xs px-6 py-3.5 rounded-lg flex items-center gap-2 cursor-pointer transition-colors shadow-md shadow-[#e60067]/15">
                     <span class="material-symbols-outlined text-sm">download</span>
-                    <span>Install now</span>
+                    <span>Install Now (Android)</span>
                 </button>
             </div>
         </section>
@@ -139,30 +142,30 @@
         <!-- Section 5: FAQ -->
         <section id="faq" class="space-y-10">
             <h2 class="font-display text-2xl md:text-3xl font-extrabold text-center text-[#1e2b49]">
-                FAQ
+                Frequently Asked Questions (FAQ)
             </h2>
             
             <div class="max-w-3xl mx-auto space-y-4">
                 <!-- FAQ 1 -->
                 <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:border-blue-200 transition-colors">
                     <summary class="flex justify-between items-center p-5 cursor-pointer list-none text-slate-800 focus:outline-none font-bold text-sm md:text-base select-none">
-                        <span>Is it legal to download Instagram Reels Video using this tool?</span>
+                        <span>Kya is tool se Instagram Reels download karna legal hai?</span>
                         <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-slate-400">expand_more</span>
                     </summary>
                     <div class="p-5 pt-0 text-xs text-slate-500 leading-relaxed border-t border-slate-100">
-                        Yes, downloading Instagram Reels for personal offline viewing is generally legal and safe. However, you must respect the copyrights of content creators and never republish or monetize their content without explicit permission.
+                        Haan, personal offline viewing ke liye Instagram Reels download karna bilkul safe aur legal hai. Lekin dhyan rahe ki content creators ke copyright ka respect karein. Kisi aur ke content ko bina permission ke republish, edit ya monetize mat karein.
                     </div>
                 </details>
 
                 <!-- FAQ 2 -->
                 <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:border-blue-200 transition-colors">
                     <summary class="flex justify-between items-center p-5 cursor-pointer list-none text-slate-800 focus:outline-none font-bold text-sm md:text-base select-none">
-                        <span>Do I need to have an instagram account to use the Instagram Reel Downloader?</span>
+                        <span>Kya reels download karne ke liye Instagram login details chahiye?</span>
                         <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-slate-400">expand_more</span>
                     </summary>
                     <div class="p-5 pt-0 border-t border-slate-100 space-y-4">
                         <p class="text-xs text-slate-500 leading-relaxed">
-                            No, you do not need to register or have an Instagram account. Our tool is completely anonymous and requires no login credentials.
+                            Bilkul nahi! Humara tool use karne ke liye aapko koi Instagram account connect karne ki zaroorat nahi hai. Ye 100% anonymous aur safe hai, hum aapse koi username ya password nahi maangte.
                         </p>
                         
                         <!-- Discover Related Topics nested container -->
@@ -199,22 +202,22 @@
                 <!-- FAQ 3 -->
                 <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:border-blue-200 transition-colors">
                     <summary class="flex justify-between items-center p-5 cursor-pointer list-none text-slate-800 focus:outline-none font-bold text-sm md:text-base select-none">
-                        <span>Can I download Instagram Reels in different resolutions or formats?</span>
+                        <span>Kya hum different quality aur formats me video save kar sakte hain?</span>
                         <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-slate-400">expand_more</span>
                     </summary>
                     <div class="p-5 pt-0 text-xs text-slate-500 leading-relaxed border-t border-slate-100">
-                        Yes! Our downloader automatically fetches the highest quality available from Instagram (usually 1080p HD) and merges it into a standard playable MP4 file.
+                        Haan, humara downloader default roop se best available quality (mostly 1080p HD) fetch karta hai aur usse easily playable MP4 format me convert karke download link provide karta hai.
                     </div>
                 </details>
 
                 <!-- FAQ 4 -->
                 <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:border-blue-200 transition-colors">
                     <summary class="flex justify-between items-center p-5 cursor-pointer list-none text-slate-800 focus:outline-none font-bold text-sm md:text-base select-none">
-                        <span>Are there any limitations on the number of Reels Video I can download?</span>
+                        <span>Kya reels download karne ki koi limit hai?</span>
                         <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-slate-400">expand_more</span>
                     </summary>
                     <div class="p-5 pt-0 text-xs text-slate-500 leading-relaxed border-t border-slate-100">
-                        No! There are absolutely no limitations. You can download as many Reels as you want, completely free and without restriction.
+                        Nahi, koi limit nahi hai! Aap jitni chahein utni Reels, videos aur photos bilkul free me download kar sakte hain, bina kisi daily ya monthly capping ke.
                     </div>
                 </details>
             </div>
@@ -225,39 +228,39 @@
     <!-- Google-compliant FAQ Schema -->
     <script type="application/ld+json">
     {
-      "@@context": "https://schema.org",
-      "@@type": "FAQPage",
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
       "mainEntity": [
         {
-          "@@type": "Question",
-          "name": "Is it legal to download Instagram Reels Video using this tool?",
+          "@type": "Question",
+          "name": "Kya is tool se Instagram Reels download karna legal hai?",
           "acceptedAnswer": {
-            "@@type": "Answer",
-            "text": "Yes, downloading Instagram Reels for personal offline viewing is generally legal and safe. However, you must respect the copyrights of content creators and never republish or monetize their content without explicit permission."
+            "@type": "Answer",
+            "text": "Haan, personal offline viewing ke liye Instagram Reels download karna bilkul safe aur legal hai. Lekin dhyan rahe ki content creators ke copyright ka respect karein. Kisi aur ke content ko bina permission ke republish, edit ya monetize mat karein."
           }
         },
         {
-          "@@type": "Question",
-          "name": "Do I need to have an instagram account to use the Instagram Reel Downloader?",
+          "@type": "Question",
+          "name": "Kya reels download karne ke liye Instagram login details chahiye?",
           "acceptedAnswer": {
-            "@@type": "Answer",
-            "text": "No, you do not need to register or have an Instagram account. Our tool is completely anonymous and requires no login credentials."
+            "@type": "Answer",
+            "text": "Bilkul nahi! Humara tool use karne ke liye aapko koi Instagram account connect karne ki zaroorat nahi hai. Ye 100% anonymous aur safe hai, hum aapse koi username ya password nahi maangte."
           }
         },
         {
-          "@@type": "Question",
-          "name": "Can I download Instagram Reels in different resolutions or formats?",
+          "@type": "Question",
+          "name": "Kya hum different quality aur formats me video save kar sakte hain?",
           "acceptedAnswer": {
-            "@@type": "Answer",
-            "text": "Yes! Our downloader automatically fetches the highest quality available from Instagram (usually 1080p HD) and merges it into a standard playable MP4 file."
+            "@type": "Answer",
+            "text": "Haan, humara downloader default roop se best available quality (mostly 1080p HD) fetch karta hai aur usse easily playable MP4 format me convert karke download link provide karta hai."
           }
         },
         {
-          "@@type": "Question",
-          "name": "Are there any limitations on the number of Reels Video I can download?",
+          "@type": "Question",
+          "name": "Kya reels download karne ki koi limit hai?",
           "acceptedAnswer": {
-            "@@type": "Answer",
-            "text": "No! There are absolutely no limitations. You can download as many Reels as you want, completely free and without restriction."
+            "@type": "Answer",
+            "text": "Nahi, koi limit nahi hai! Aap jitni chahein utni Reels, videos aur photos bilkul free me download kar sakte hain, bina kisi daily ya monthly capping ke."
           }
         }
       ]

@@ -11,7 +11,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        $this->app->singleton(\App\Core\Services\SEOService::class, function () {
+            return new \App\Core\Services\SEOService();
+        });
     }
 
     /**
