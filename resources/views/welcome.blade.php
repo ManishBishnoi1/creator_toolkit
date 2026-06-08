@@ -1,273 +1,266 @@
 <x-layout>
-    <!-- Hero Section -->
-    <section class="relative pt-40 pb-12 overflow-hidden px-gutter">
-        <div class="max-w-container-max mx-auto grid lg:grid-cols-2 gap-stack-lg items-center">
-            <div class="space-y-stack-md reveal">
-                <span class="inline-flex items-center gap-2 px-3 py-1 glass rounded-full text-secondary font-label-md">
-                    <span class="material-symbols-outlined text-[16px]">bolt</span>
-                    AI-Powered Downloader
-                </span>
-                <h1 class="font-display-lg text-display-lg leading-tight tracking-tighter text-white">
-                    Download Instagram Reels <span class="text-secondary bg-clip-text text-transparent bg-gradient-to-r from-secondary to-tertiary">Instantly</span>
-                </h1>
-                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
-                    Fast, free, and high-quality Instagram reel downloader with AI-powered creator tools to boost your social presence.
+    <!-- Hero/Gradient Section -->
+    <section class="relative pt-16 pb-20 overflow-hidden bg-gradient-to-r from-[#e100ff] to-[#00b8ff] text-center px-gutter">
+        <div class="max-w-4xl mx-auto space-y-4">
+            <h1 class="font-display text-3xl md:text-4xl font-extrabold text-white tracking-tight">
+                Instagram Reels Download
+            </h1>
+            
+            <!-- Downloader Widget -->
+            <x-downloader />
+        </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <div class="max-w-5xl mx-auto px-6 py-16 space-y-16">
+        
+        <!-- Section 1: Instagram Reels Downloader Online -->
+        <section class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-4 text-left">
+                <h2 class="font-display text-2xl md:text-3xl font-extrabold text-[#1e2b49]">
+                    Instagram Reels Downloader Online
+                </h2>
+                <p class="text-sm text-slate-600 leading-relaxed font-normal">
+                    Downloading Instagram Reels has never been easier or safer with our Instagram Reels Downloader. We've designed our tool to help you download raw Reels videos in stunning HD MP4 quality directly to your device's gallery. The best part? It's completely free and works on both Android and iPhone, so you can download Instagram Reels anytime, anywhere.
                 </p>
-                
-                <div class="flex flex-wrap gap-stack-md pt-2">
-                    <div class="flex items-center gap-2 text-on-surface-variant">
-                        <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
-                        <span class="font-body-sm">No watermark</span>
-                    </div>
-                    <div class="flex items-center gap-2 text-on-surface-variant">
-                        <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
-                        <span class="font-body-sm">Fast downloads</span>
-                    </div>
-                    <div class="flex items-center gap-2 text-on-surface-variant">
-                        <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
-                        <span class="font-body-sm">Mobile friendly</span>
-                    </div>
-                    <div class="flex items-center gap-2 text-on-surface-variant">
-                        <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
-                        <span class="font-body-sm">Unlimited usage</span>
-                    </div>
+                <div class="inline-block bg-blue-50 text-blue-600 text-[10px] font-bold tracking-wider uppercase px-3 py-1.5 rounded">
+                    # Photo & Image Sharing
                 </div>
-
-                <!-- Downloader Widget -->
-                <x-downloader />
             </div>
-
-            <!-- Float Mockup Image Preview -->
-            <div class="relative group reveal">
-                <div class="absolute inset-0 bg-secondary/10 blur-3xl rounded-full opacity-50 group-hover:opacity-80 transition-opacity"></div>
-                <div class="glass float-animation p-4 rounded-3xl relative overflow-hidden border-white/10">
-                    <img alt="UI Preview" class="rounded-2xl w-full h-[400px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCpmywZwhlCeAtF3TIFPJbqfxROTX5Thaf1CrJG4pZYkIcPM4qUhG9lP_yLlGQJpCfNKrKriUKoLQ_VDYEIyNZ1hPc1rnHe3RCz7G3xFd15PTj0vIDlCEChPkh8SuchRV17wzBtTbt7bGTPQhmCb4oMIYz-ET8Mv6xgL8IgTbcmgS1od-Rb9iRWD8CLaxWgmpU2na3LM88CXsBX8aB8ol50IGHd7T6AXmSCN-infgKepPRNzJ5lFdlpVKhuo5u4Q8UM5VBzlGZj-fR"/>
-                    <div class="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-                        <div class="flex items-center justify-between">
-                            <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center">
-                                    <span class="material-symbols-outlined text-secondary">motion_photos_on</span>
-                                </div>
-                                <div>
-                                    <p class="font-label-md text-white">Reel_0921.mp4</p>
-                                    <p class="text-[10px] text-on-surface-variant">4K Resolution • 12.4 MB</p>
-                                </div>
-                            </div>
-                            <div class="flex gap-2">
-                                <div class="px-3 py-1 rounded-full glass text-[10px] text-white">Processing...</div>
-                            </div>
+            
+            <!-- 3D Instagram Icon Illustration -->
+            <div class="flex justify-center">
+                <div class="relative w-40 h-40 flex items-center justify-center">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] rounded-[36px] shadow-2xl transform rotate-3 scale-95 opacity-80 blur-md"></div>
+                    <div class="absolute inset-0 bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] rounded-[36px] flex items-center justify-center border-4 border-white shadow-lg">
+                        <div class="w-24 h-24 border-[6px] border-white rounded-[24px] flex items-center justify-center relative">
+                            <div class="w-10 h-10 border-[6px] border-white rounded-full"></div>
+                            <div class="w-3 h-3 bg-white rounded-full absolute top-2 right-2"></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- AdSense Space 1 -->
-    <x-ad-slot type="horizontal" />
-
-    <!-- Trusted By / Stats Section -->
-    <section class="py-12 border-y border-white/5 bg-surface-container-lowest/30 reveal">
-        <div class="max-w-container-max mx-auto px-gutter grid grid-cols-2 md:grid-cols-3 gap-8">
-            <div class="text-center space-y-1">
-                <div class="flex justify-center items-center gap-2 text-primary">
-                    <span class="material-symbols-outlined">download_done</span>
-                    <span class="font-headline-md text-white">1M+</span>
-                </div>
-                <p class="font-body-sm text-on-surface-variant uppercase tracking-widest text-[10px]">Downloads Served</p>
-            </div>
-            <div class="text-center space-y-1 border-x border-white/10 px-8">
-                <div class="flex justify-center items-center gap-2 text-primary">
-                    <span class="material-symbols-outlined">group</span>
-                    <span class="font-headline-md text-white">100K+</span>
-                </div>
-                <p class="font-body-sm text-on-surface-variant uppercase tracking-widest text-[10px]">Active Creators</p>
-            </div>
-            <div class="text-center space-y-1 hidden md:block">
-                <div class="flex justify-center items-center gap-2 text-primary">
-                    <span class="material-symbols-outlined">public</span>
-                    <span class="font-headline-md text-white">Fast</span>
-                </div>
-                <p class="font-body-sm text-on-surface-variant uppercase tracking-widest text-[10px]">Global Access</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section Component -->
-    <x-features />
-
-    <!-- AdSense Space 2 -->
-    <x-ad-slot type="horizontal" />
-
-    <!-- How It Works Section -->
-    <section class="py-stack-lg px-gutter relative overflow-hidden reveal">
-        <div class="max-w-container-max mx-auto">
-            <h2 class="font-headline-lg text-headline-lg text-center mb-20 text-white">Download in 3 Simple Steps</h2>
-            <div class="relative">
-                <div class="absolute top-1/2 left-0 w-full h-[1px] bg-white/10 hidden md:block"></div>
-                <div class="grid md:grid-cols-3 gap-stack-lg relative">
-                    <!-- Step 1 -->
-                    <div class="flex flex-col items-center text-center group">
-                        <div class="w-16 h-16 rounded-full bg-surface-container border border-white/20 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:border-secondary transition-all relative z-10 bg-background">
-                            <span class="material-symbols-outlined text-secondary">link</span>
-                        </div>
-                        <h4 class="font-headline-md text-white mb-2">Paste URL</h4>
-                        <p class="text-on-surface-variant font-body-sm">Copy the link of any Instagram Reel and paste it into the search box.</p>
-                    </div>
-                    <!-- Step 2 -->
-                    <div class="flex flex-col items-center text-center group">
-                        <div class="w-16 h-16 rounded-full bg-surface-container border border-white/20 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:border-secondary transition-all relative z-10 bg-background">
-                            <span class="material-symbols-outlined text-secondary">settings_suggest</span>
-                        </div>
-                        <h4 class="font-headline-md text-white mb-2">Process</h4>
-                        <p class="text-on-surface-variant font-body-sm">Our AI system analyzes the content and prepares the highest quality file.</p>
-                    </div>
-                    <!-- Step 3 -->
-                    <div class="flex flex-col items-center text-center group">
-                        <div class="w-16 h-16 rounded-full bg-surface-container border border-white/20 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:border-secondary transition-all relative z-10 bg-background">
-                            <span class="material-symbols-outlined text-secondary">download_for_offline</span>
-                        </div>
-                        <h4 class="font-headline-md text-white mb-2">Download</h4>
-                        <p class="text-on-surface-variant font-body-sm">Save the video directly to your device. No watermark, high bit-rate.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SEO Content Block & Sidebar Ad Layout -->
-    <section id="about" class="py-stack-lg px-gutter bg-surface-container-lowest/50 reveal">
-        <div class="max-w-container-max mx-auto grid lg:grid-cols-3 gap-stack-lg">
-            <!-- Main SEO Body -->
-            <div class="lg:col-span-2 space-y-stack-lg">
-                <h2 class="font-headline-lg text-headline-lg text-white">Why Choose Creator Toolkit for Instagram Reels?</h2>
-                <div class="prose prose-invert max-w-none space-y-stack-md text-on-surface-variant">
-                    <p class="font-body-md leading-relaxed">
-                        In the competitive world of short-form video, speed is everything. Creator Toolkit provides the fastest <strong>Instagram Reel Downloader</strong> on the web, designed specifically for professional social media managers and independent creators. Our platform bypasses common limitations of other services, offering unlimited high-quality downloads without restrictive data caps.
+        <!-- Section 2: How to download Reels from Instagram? (Indigo Card) -->
+        <section class="bg-[#5d3be8] text-white rounded-3xl p-8 md:p-12 shadow-xl text-center space-y-10">
+            <h2 class="font-display text-2xl md:text-3xl font-extrabold">
+                How to download Reels from Instagram?
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 text-left">
+                <!-- Step 1 -->
+                <div class="space-y-2">
+                    <h3 class="font-display text-lg font-bold">1. Copy the URL</h3>
+                    <p class="text-xs text-indigo-100 leading-relaxed font-light">
+                        Open the Instagram app or website, go to the photo, video, reels, carousel, or IGTV you want to download. Copy the URL.
                     </p>
-                    
-                    <div class="grid md:grid-cols-2 gap-stack-md pt-4">
-                        <div class="space-y-2">
-                            <h4 class="text-white font-bold font-display text-sm">Uncompromising Quality</h4>
-                            <p class="text-body-sm">We don't compress your content. Download Reels in their original 1080p or 4K resolution, preserving every pixel for your reposts or edits.</p>
-                        </div>
-                        <div class="space-y-2">
-                            <h4 class="text-white font-bold font-display text-sm">Privacy Focused</h4>
-                            <p class="text-body-sm">No login required. We respect your digital footprint and ensure that all downloads are processed anonymously and securely.</p>
-                        </div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="space-y-2">
+                    <h3 class="font-display text-lg font-bold">2. Paste the link</h3>
+                    <p class="text-xs text-indigo-100 leading-relaxed font-light">
+                        Return to the SSSInstagram website, paste the link into the input field at the top of the page, and click the "Download" button to start downloading.
+                    </p>
+                    <div class="inline-block bg-white/10 text-white text-[10px] font-semibold px-2.5 py-1 rounded mt-2">
+                        # Computers & Electronics
                     </div>
-
-                    <p class="font-body-md leading-relaxed pt-4">
-                        By integrating <strong>AI-powered creator tools</strong> directly into the downloading workflow, we help you transition from consumer to creator in minutes. From generating viral captions to discovering the best trending hashtags, our ecosystem is built to maximize your reach.
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="space-y-2">
+                    <h3 class="font-display text-lg font-bold">3. Download Video Reel</h3>
+                    <p class="text-xs text-indigo-100 leading-relaxed font-light">
+                        Review the results and find the file you want to download. Click the "Download" button. Ready! The file is saved to your device.
                     </p>
                 </div>
             </div>
+        </section>
 
-            <!-- Sidebar Advertisement Slot -->
-            <div class="flex flex-col gap-6">
-                <div class="glass p-6 rounded-2xl border-white/5 space-y-4">
-                    <h4 class="font-headline-md text-sm text-white font-semibold">Downloader Specs</h4>
-                    <ul class="space-y-3 text-xs text-on-surface-variant">
-                        <li class="flex items-center gap-2">
-                            <span class="material-symbols-outlined text-secondary text-base">check_circle</span>
-                            <span>Zero sign-in or tokens required</span>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="material-symbols-outlined text-secondary text-base">check_circle</span>
-                            <span>Original HD format retrieval</span>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="material-symbols-outlined text-secondary text-base">check_circle</span>
-                            <span>Multi-device compatibility (iOS, Android, PC)</span>
-                        </li>
-                    </ul>
-                </div>
-                
-                <!-- AdSense Space 3 (Sidebar) -->
-                <x-ad-slot type="sidebar" />
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="py-stack-lg px-gutter reveal">
-        <div class="max-w-container-max mx-auto">
-            <h2 class="font-headline-lg text-headline-lg text-center mb-16 text-white">Loved by Top Creators</h2>
-            <div class="grid md:grid-cols-3 gap-stack-md">
-                <!-- Testimonial 1 -->
-                <div class="glass p-8 rounded-3xl space-y-6">
-                    <div class="flex items-center gap-1 text-secondary">
-                        <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-                    </div>
-                    <p class="text-white font-body-md italic text-lg leading-relaxed">"The fastest downloader I've ever used. The AI caption generator saves me hours of brainstorming every week!"</p>
-                    <div class="flex items-center gap-4">
-                        <img alt="Avatar" class="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmwhgHeCRcCXJE_osJSCbUD4wEEBHYxnbc0RcpjFi-Lpeuk91YwiRcbhmgIqQIj3gQh9aZnrjnUYePRPA2neQvsBHtW1Cs70FidDbTyB8v27FxIHk6o40CR4MYY2GwPvOzKw2zWfKrawYxw8Pr4B_yf4F5VsLp8V8FbnWlorOUIiJLbuZ5TCU3G4CVJR1z5UaD0OqoH7cvfFYmn2tFJZhjxusHAw31THx56KZRzrDs5c3F-di8Gjc6bs0ztZhPteN6MKPhy-0wklY_"/>
-                        <div>
-                            <p class="font-bold text-white text-sm">Sarah Jenkins</p>
-                            <p class="text-on-surface-variant text-xs">@sarahcreate_</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 2 -->
-                <div class="glass p-8 rounded-3xl space-y-6 border-secondary/35 bg-secondary/5">
-                    <div class="flex items-center gap-1 text-secondary">
-                        <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-                    </div>
-                    <p class="text-white font-body-md italic text-lg leading-relaxed">"Absolutely essential for my workflow. No watermarks and high quality every single time. 10/10 recommendation."</p>
-                    <div class="flex items-center gap-4">
-                        <img alt="Avatar" class="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-0k-BSq2QlyoFdF3R6pGez1doxsh4l1D5kjOyNaE_hMEPFrh_3qC9ufKzxKk5zh6WUmtiYFPDBsE6mMbU5Lr95ADXogmFX5ppkIN67BYa7M8AYC4Tc3n7XM9WlFns4NZpFBPX_1T6xWAOw9QdtZELRcZFTIMLSwWxX-RaoL8FWN0N8nE_HriCPimD1ryVXvsqKxpPratVBRCdFp9_hlc5-9KGHhPTvAF6xl91ShZqbcJOX6CXO50xdnKuUtQXXAphGIG2RX45DMJ3"/>
-                        <div>
-                            <p class="font-bold text-white text-sm">Marcus Tech</p>
-                            <p class="text-on-surface-variant text-xs">@marcusedits</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 3 -->
-                <div class="glass p-8 rounded-3xl space-y-6">
-                    <div class="flex items-center gap-1 text-secondary">
-                        <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-                        <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
-                    </div>
-                    <p class="text-white font-body-md italic text-lg leading-relaxed">"Finally a tool that works on mobile as good as it does on desktop. The hashtag tool is a game changer."</p>
-                    <div class="flex items-center gap-4">
-                        <img alt="Avatar" class="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6atz5X2vTGiAniTJwplhQJDVxIC8KdCjx4cnQaeZ7txtWNDvPm5MUkcad_0kKRbdkhGNeMhVEf6r_5H2KJ74lqYU5g6xhq-40VncLZ7Ddf6SP5hvj-cgkH5duKNB8C524CtELhdY8Hcb67MZ6F-vYwmvbXGOtLlSya63gFg_9ZejA5AW7VlBfNOlu7EZBkxz1hAJ0yHXLBDgBuiO2EIPdoLbWFGXBXnrKJx3FWaPCwUBOwpOW5aKp0ETAf1xuW2l0YsOG8ZVLWj2f"/>
-                        <div>
-                            <p class="font-bold text-white text-sm">Elena Rose</p>
-                            <p class="text-on-surface-variant text-xs">@elenasvlog</p>
+        <!-- Section 3: Instagram Reels Video Download -->
+        <section class="grid md:grid-cols-2 gap-12 items-center pt-4">
+            <!-- Left: Phone vector -->
+            <div class="flex justify-center order-last md:order-first">
+                <div class="relative w-36 h-64 bg-slate-800 rounded-[36px] p-2.5 border-4 border-slate-700 shadow-2xl flex flex-col justify-between overflow-hidden">
+                    <div class="flex-grow bg-[#dbebff] rounded-[28px] flex items-center justify-center relative overflow-hidden">
+                        <div class="w-14 h-14 rounded-full bg-blue-600 shadow-md flex items-center justify-center text-white cursor-pointer hover:scale-105 transition-transform">
+                            <span class="material-symbols-outlined text-[32px] leading-none pl-1">play_arrow</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section Component -->
-    <x-faq />
-
-    <!-- CTA Section -->
-    <section class="py-24 px-gutter relative overflow-hidden reveal">
-        <div class="max-w-container-max mx-auto text-center relative z-10">
-            <div class="glass p-12 md:p-20 rounded-[40px] border-secondary/20 space-y-stack-lg">
-                <h2 class="font-display-lg text-display-lg leading-tight text-white">Start Downloading <br/><span class="text-secondary bg-clip-text text-transparent bg-gradient-to-r from-secondary to-tertiary">Reels Today</span></h2>
-                <p class="text-on-surface-variant text-xl max-w-2xl mx-auto">Join over 100,000 creators using the most powerful toolkit on the planet.</p>
-                <div class="flex flex-col md:flex-row gap-4 justify-center pt-4">
-                    <button class="gradient-btn btn-pulse px-10 py-4 rounded-xl font-headline-md text-lg cursor-pointer">Try Creator Toolkit</button>
-                    <button class="glass px-10 py-4 rounded-xl font-headline-md text-lg hover:bg-white/10 transition-colors cursor-pointer">View Features</button>
+            
+            <div class="space-y-4 text-left">
+                <p class="text-xs font-bold text-blue-600 tracking-wider uppercase">Fast and Secure Reels Download</p>
+                <h2 class="font-display text-2xl md:text-3xl font-extrabold text-[#1e2b49]">
+                    Instagram Reels Video Download
+                </h2>
+                <p class="text-sm text-slate-600 leading-relaxed font-normal">
+                    We're not going to spam you with ads or try to sell you stuff—we just want everyone to have access to this amazing service! We provide the fastest speed and best quality. We know what it's like to be frustrated by the limitations that Instagram puts on us, but we also know how important it is for you to be able to get your Instagram reels downloaded in high quality whenever you want. So here's our solution: it's a free tool that lets you download your Instagram reels 100% safely and securely without providing any login details or personal information—and it works in just three simple steps!
+                </p>
+                <div class="inline-block bg-blue-50 text-blue-600 text-[10px] font-bold tracking-wider uppercase px-3 py-1.5 rounded">
+                    # Download Managers
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Section 4: Download with mobile app -->
+        <section class="bg-white rounded-3xl border border-slate-100 shadow-lg p-8 grid md:grid-cols-2 gap-8 items-center">
+            <!-- Left side: Phone mockup with Instagram logo -->
+            <div class="flex justify-center">
+                <div class="relative w-32 h-44 bg-slate-800 rounded-t-[32px] pt-3 px-3 border-x-4 border-t-4 border-slate-700 shadow-lg overflow-hidden flex flex-col justify-end">
+                    <div class="h-32 bg-gradient-to-b from-[#ffeaf2] to-white rounded-t-[24px] flex items-center justify-center p-4">
+                        <div class="w-14 h-14 bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] rounded-xl flex items-center justify-center shadow-md">
+                            <div class="w-8 h-8 border-4 border-white rounded-[10px] flex items-center justify-center relative">
+                                <div class="w-3 h-3 border-4 border-white rounded-full"></div>
+                                <div class="w-1 h-1 bg-white rounded-full absolute top-0.5 right-0.5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right side: Content -->
+            <div class="space-y-4 text-left">
+                <h3 class="font-display text-xl font-extrabold text-[#1e2b49]">
+                    Download with mobile app
+                </h3>
+                <p class="text-xs text-slate-500 leading-relaxed">
+                    Only for Android: Download any photos, videos, reels, IGTV in one click! Our app provides fast, high-resolution downloads without watermarks, making it an ideal choice for downloading Instagram content.
+                </p>
+                <button type="button" class="bg-[#e60067] hover:bg-[#c80055] text-white font-bold text-xs px-6 py-3.5 rounded-lg flex items-center gap-2 cursor-pointer transition-colors shadow-md shadow-[#e60067]/15">
+                    <span class="material-symbols-outlined text-sm">download</span>
+                    <span>Install now</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Section 5: FAQ -->
+        <section id="faq" class="space-y-10">
+            <h2 class="font-display text-2xl md:text-3xl font-extrabold text-center text-[#1e2b49]">
+                FAQ
+            </h2>
+            
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ 1 -->
+                <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:border-blue-200 transition-colors">
+                    <summary class="flex justify-between items-center p-5 cursor-pointer list-none text-slate-800 focus:outline-none font-bold text-sm md:text-base select-none">
+                        <span>Is it legal to download Instagram Reels Video using this tool?</span>
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-slate-400">expand_more</span>
+                    </summary>
+                    <div class="p-5 pt-0 text-xs text-slate-500 leading-relaxed border-t border-slate-100">
+                        Yes, downloading Instagram Reels for personal offline viewing is generally legal and safe. However, you must respect the copyrights of content creators and never republish or monetize their content without explicit permission.
+                    </div>
+                </details>
+
+                <!-- FAQ 2 -->
+                <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:border-blue-200 transition-colors">
+                    <summary class="flex justify-between items-center p-5 cursor-pointer list-none text-slate-800 focus:outline-none font-bold text-sm md:text-base select-none">
+                        <span>Do I need to have an instagram account to use the Instagram Reel Downloader?</span>
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-slate-400">expand_more</span>
+                    </summary>
+                    <div class="p-5 pt-0 border-t border-slate-100 space-y-4">
+                        <p class="text-xs text-slate-500 leading-relaxed">
+                            No, you do not need to register or have an Instagram account. Our tool is completely anonymous and requires no login credentials.
+                        </p>
+                        
+                        <!-- Discover Related Topics nested container -->
+                        <div class="bg-slate-50 border border-slate-100 rounded-lg overflow-hidden text-left">
+                            <div class="px-4 py-2 border-b border-slate-150 bg-slate-100">
+                                <p class="text-[9px] font-bold text-slate-500 uppercase tracking-widest">Discover related topics</p>
+                            </div>
+                            <div class="divide-y divide-slate-150 text-xs font-semibold text-blue-600">
+                                <a href="#" class="flex justify-between items-center px-4 py-2.5 hover:bg-slate-100/60 transition-colors">
+                                    <span>Video Downloader on Insta</span>
+                                    <span class="material-symbols-outlined text-slate-400 text-sm">chevron_right</span>
+                                </a>
+                                <a href="#" class="flex justify-between items-center px-4 py-2.5 hover:bg-slate-100/60 transition-colors">
+                                    <span>Download Instagram Videos App</span>
+                                    <span class="material-symbols-outlined text-slate-400 text-sm">chevron_right</span>
+                                </a>
+                                <a href="#" class="flex justify-between items-center px-4 py-2.5 hover:bg-slate-100/60 transition-colors">
+                                    <span>Instagram Video Download Apps</span>
+                                    <span class="material-symbols-outlined text-slate-400 text-sm">chevron_right</span>
+                                </a>
+                                <a href="#" class="flex justify-between items-center px-4 py-2.5 hover:bg-slate-100/60 transition-colors">
+                                    <span>Download Instagram Video from Chrome</span>
+                                    <span class="material-symbols-outlined text-slate-400 text-sm">chevron_right</span>
+                                </a>
+                                <a href="#" class="flex justify-between items-center px-4 py-2.5 hover:bg-slate-100/60 transition-colors">
+                                    <span>Instagram Video Downloader 1080p</span>
+                                    <span class="material-symbols-outlined text-slate-400 text-sm">chevron_right</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- FAQ 3 -->
+                <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:border-blue-200 transition-colors">
+                    <summary class="flex justify-between items-center p-5 cursor-pointer list-none text-slate-800 focus:outline-none font-bold text-sm md:text-base select-none">
+                        <span>Can I download Instagram Reels in different resolutions or formats?</span>
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-slate-400">expand_more</span>
+                    </summary>
+                    <div class="p-5 pt-0 text-xs text-slate-500 leading-relaxed border-t border-slate-100">
+                        Yes! Our downloader automatically fetches the highest quality available from Instagram (usually 1080p HD) and merges it into a standard playable MP4 file.
+                    </div>
+                </details>
+
+                <!-- FAQ 4 -->
+                <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:border-blue-200 transition-colors">
+                    <summary class="flex justify-between items-center p-5 cursor-pointer list-none text-slate-800 focus:outline-none font-bold text-sm md:text-base select-none">
+                        <span>Are there any limitations on the number of Reels Video I can download?</span>
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-slate-400">expand_more</span>
+                    </summary>
+                    <div class="p-5 pt-0 text-xs text-slate-500 leading-relaxed border-t border-slate-100">
+                        No! There are absolutely no limitations. You can download as many Reels as you want, completely free and without restriction.
+                    </div>
+                </details>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Google-compliant FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@@context": "https://schema.org",
+      "@@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@@type": "Question",
+          "name": "Is it legal to download Instagram Reels Video using this tool?",
+          "acceptedAnswer": {
+            "@@type": "Answer",
+            "text": "Yes, downloading Instagram Reels for personal offline viewing is generally legal and safe. However, you must respect the copyrights of content creators and never republish or monetize their content without explicit permission."
+          }
+        },
+        {
+          "@@type": "Question",
+          "name": "Do I need to have an instagram account to use the Instagram Reel Downloader?",
+          "acceptedAnswer": {
+            "@@type": "Answer",
+            "text": "No, you do not need to register or have an Instagram account. Our tool is completely anonymous and requires no login credentials."
+          }
+        },
+        {
+          "@@type": "Question",
+          "name": "Can I download Instagram Reels in different resolutions or formats?",
+          "acceptedAnswer": {
+            "@@type": "Answer",
+            "text": "Yes! Our downloader automatically fetches the highest quality available from Instagram (usually 1080p HD) and merges it into a standard playable MP4 file."
+          }
+        },
+        {
+          "@@type": "Question",
+          "name": "Are there any limitations on the number of Reels Video I can download?",
+          "acceptedAnswer": {
+            "@@type": "Answer",
+            "text": "No! There are absolutely no limitations. You can download as many Reels as you want, completely free and without restriction."
+          }
+        }
+      ]
+    }
+    </script>
 </x-layout>

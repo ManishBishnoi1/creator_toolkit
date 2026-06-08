@@ -93,7 +93,22 @@ class InstagramScraperService
             $process->run();
 
             if (!$process->isSuccessful()) {
-                throw new ProcessFailedException($process);
+                $errorOutput = $process->getErrorOutput();
+                $errStr = !empty($errorOutput) ? trim($errorOutput) : $process->getOutput();
+                
+                if (stripos($errStr, 'Private video') !== false || stripos($errStr, 'login') !== false) {
+                    throw new ToolExecutionException("This Reel is private and cannot be downloaded without authentication.", 403);
+                }
+                
+                if (stripos($errStr, '404') !== false || stripos($errStr, 'not found') !== false || stripos($errStr, 'does not exist') !== false) {
+                    throw new ToolExecutionException("This Instagram Reel was deleted, or the URL is invalid.", 404);
+                }
+                
+                if (stripos($errStr, '429') !== false || stripos($errStr, 'block') !== false || stripos($errStr, 'Too Many Requests') !== false) {
+                    throw new ToolExecutionException("Instagram is temporarily blocking downloader requests. Please try again shortly.", 429);
+                }
+                
+                throw new ToolExecutionException("Instagram scraping failed. Please check the URL and try again.", 400);
             }
 
             if (!file_exists($jsonFile)) {
@@ -109,10 +124,10 @@ class InstagramScraperService
             // Map and return standard scraper interface
             return $this->formatScraperResult($reelId, $jsonData);
 
+        } catch (ToolExecutionException $e) {
+            throw $e;
         } catch (\Exception $e) {
-            $errorOutput = $process->getErrorOutput();
-            $reason = !empty($errorOutput) ? trim($errorOutput) : $e->getMessage();
-            throw ToolExecutionException::failedToScrape($url, $reason);
+            throw new ToolExecutionException("Instagram scraping failed: " . $e->getMessage(), 500);
         }
     }
 
