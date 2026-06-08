@@ -46,8 +46,9 @@ class InstagramScraperService
         $usePython = config('tools.instagram.ytdlp_use_python', true);
 
         if ($usePython) {
+            $pythonBinary = config('tools.instagram.python_binary', 'python');
             $command = [
-                '/usr/bin/python3',
+                $pythonBinary,
                 '-m',
                 'yt_dlp',
             ];
