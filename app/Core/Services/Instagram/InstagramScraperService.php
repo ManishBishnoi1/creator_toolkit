@@ -5,6 +5,7 @@ namespace App\Core\Services\Instagram;
 use App\Core\Exceptions\ToolExecutionException;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
+use Illuminate\Support\Facades\Log;
 
 class InstagramScraperService
 {
@@ -73,6 +74,16 @@ class InstagramScraperService
             $url
         ]);
 
+        // Append proxy rotation settings if enabled
+        if (config('tools.instagram.proxy_rotation', false)) {
+            $rotator = app(\App\Modules\Downloader\Services\ScrapingProxyRotator::class);
+            $proxy = $rotator->getNextProxy();
+            if ($proxy) {
+                $command[] = '--proxy';
+                $command[] = $proxy;
+            }
+        }
+
         $tmpDir = storage_path('app/tmp');
         if (!file_exists($tmpDir)) {
             mkdir($tmpDir, 0755, true);
@@ -96,6 +107,12 @@ class InstagramScraperService
                 $errorOutput = $process->getErrorOutput();
                 $errStr = !empty($errorOutput) ? trim($errorOutput) : $process->getOutput();
                 
+                // Log the raw error output to Laravel logs for easy production diagnostics
+                Log::error("Instagram scraping process failed on URL [{$url}]", [
+                    'command' => $command,
+                    'error' => $errStr,
+                ]);
+
                 if (stripos($errStr, 'no video') !== false || stripos($errStr, 'no video in this post') !== false) {
                     throw new ToolExecutionException("There is no video in this post. Our downloader only supports Instagram Reels, Videos, and Stories.", 422);
                 }

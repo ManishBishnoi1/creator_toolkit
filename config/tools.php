@@ -29,6 +29,7 @@ return [
     'instagram' => [
         'scraping_timeout' => env('INSTAGRAM_SCRAPING_TIMEOUT', 120),
         'proxy_rotation' => env('INSTAGRAM_PROXY_ROTATION', false),
+        'proxies' => array_filter(explode(',', env('INSTAGRAM_PROXIES', ''))),
         'cache_duration' => env('INSTAGRAM_CACHE_DURATION', 600), // 10 minutes cache
         'ytdlp_use_python' => env('YTDLP_USE_PYTHON', true),
         'ytdlp_binary_path' => env('YTDLP_BINARY_PATH', base_path('bin/yt-dlp.exe')),
