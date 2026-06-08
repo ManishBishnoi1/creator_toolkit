@@ -33,6 +33,7 @@ return [
         'cache_duration' => env('INSTAGRAM_CACHE_DURATION', 600), // 10 minutes cache
         'ytdlp_use_python' => env('YTDLP_USE_PYTHON', true),
         'python_binary' => env('PYTHON_BINARY', 'python'),
+        'ffmpeg_path' => env('FFMPEG_PATH'),
         'ytdlp_binary_path' => env('YTDLP_BINARY_PATH', base_path('bin/yt-dlp.exe')),
     ],
 
