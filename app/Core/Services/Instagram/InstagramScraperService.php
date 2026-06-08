@@ -68,7 +68,7 @@ class InstagramScraperService
             '--write-info-json',
             '--write-thumbnail',
             '-f',
-            'best',
+            'bestvideo+bestaudio/best',
             '-o',
             $outputPath,
             $url
