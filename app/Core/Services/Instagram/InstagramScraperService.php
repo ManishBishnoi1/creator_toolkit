@@ -177,16 +177,17 @@ class InstagramScraperService
                     $paramString = http_build_query($params);
                     $signature = sha1($paramString . $cloudinarySecret);
 
-                    $response = \Illuminate\Support\Facades\Http::asMultipart()->post(
-                        "https://api.cloudinary.com/v1_1/{$cloudinaryCloud}/video/upload",
-                        [
-                            'file' => fopen($mp4File, 'r'),
-                            'public_id' => $reelId,
-                            'timestamp' => $timestamp,
-                            'api_key' => $cloudinaryKey,
-                            'signature' => $signature,
-                        ]
-                    );
+                    $response = \Illuminate\Support\Facades\Http::asMultipart()
+                        ->attach('file', fopen($mp4File, 'r'), $reelId . '.mp4')
+                        ->post(
+                            "https://api.cloudinary.com/v1_1/{$cloudinaryCloud}/video/upload",
+                            [
+                                'public_id' => $reelId,
+                                'timestamp' => $timestamp,
+                                'api_key' => $cloudinaryKey,
+                                'signature' => $signature,
+                            ]
+                        );
 
                     if ($response->successful()) {
                         $uploadData = $response->json();
