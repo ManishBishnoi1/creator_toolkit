@@ -87,6 +87,16 @@ class InstagramScraperService
 
         // Append explicit FFmpeg location if configured (useful if ffmpeg is not in web server PATH)
         $ffmpegPath = config('tools.instagram.ffmpeg_path');
+        if (empty($ffmpegPath)) {
+            if (DIRECTORY_SEPARATOR === '/') {
+                if (file_exists('/usr/bin/ffmpeg')) {
+                    $ffmpegPath = '/usr/bin/ffmpeg';
+                } elseif (file_exists('/usr/local/bin/ffmpeg')) {
+                    $ffmpegPath = '/usr/local/bin/ffmpeg';
+                }
+            }
+        }
+
         if (!empty($ffmpegPath)) {
             $command[] = '--ffmpeg-location';
             $command[] = $ffmpegPath;
