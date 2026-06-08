@@ -96,6 +96,10 @@ class InstagramScraperService
                 $errorOutput = $process->getErrorOutput();
                 $errStr = !empty($errorOutput) ? trim($errorOutput) : $process->getOutput();
                 
+                if (stripos($errStr, 'no video') !== false || stripos($errStr, 'no video in this post') !== false) {
+                    throw new ToolExecutionException("There is no video in this post. Our downloader only supports Instagram Reels, Videos, and Stories.", 422);
+                }
+                
                 if (stripos($errStr, 'Private video') !== false || stripos($errStr, 'login') !== false) {
                     throw new ToolExecutionException("This Reel is private and cannot be downloaded without authentication.", 403);
                 }

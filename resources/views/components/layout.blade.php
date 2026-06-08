@@ -71,19 +71,21 @@
 
     // Sticky Navbar scroll trigger
     const nav = document.getElementById('main-nav');
-    window.addEventListener('scroll', () => {
+    if (nav) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 40) {
+                nav.classList.add('bg-black/60', 'backdrop-blur-lg', 'border-white/10', 'shadow-2xl', 'py-2');
+                nav.classList.remove('bg-white/0', 'backdrop-blur-0', 'border-white/0', 'py-4');
+            } else {
+                nav.classList.remove('bg-black/60', 'backdrop-blur-lg', 'border-white/10', 'shadow-2xl', 'py-2');
+                nav.classList.add('bg-white/0', 'backdrop-blur-0', 'border-white/0', 'py-4');
+            }
+        });
+
+        // Initial check for nav state on load
         if (window.scrollY > 40) {
             nav.classList.add('bg-black/60', 'backdrop-blur-lg', 'border-white/10', 'shadow-2xl', 'py-2');
-            nav.classList.remove('bg-white/0', 'backdrop-blur-0', 'border-white/0', 'py-4');
-        } else {
-            nav.classList.remove('bg-black/60', 'backdrop-blur-lg', 'border-white/10', 'shadow-2xl', 'py-2');
-            nav.classList.add('bg-white/0', 'backdrop-blur-0', 'border-white/0', 'py-4');
         }
-    });
-
-    // Initial check for nav state on load
-    if (window.scrollY > 40) {
-        nav.classList.add('bg-black/60', 'backdrop-blur-lg', 'border-white/10', 'shadow-2xl', 'py-2');
     }
 
     // Add loaded class to body to reveal content once styles compile
