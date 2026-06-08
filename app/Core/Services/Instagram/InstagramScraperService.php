@@ -35,10 +35,21 @@ class InstagramScraperService
         $jsonFile = "{$storageDir}/{$reelId}.info.json";
 
         // 2. Check if cache exists
-        if (file_exists($mp4File) && file_exists($jsonFile)) {
+        if (file_exists($jsonFile)) {
             $jsonData = json_decode(file_get_contents($jsonFile), true);
             if ($jsonData) {
-                return $this->formatScraperResult($reelId, $jsonData);
+                $cloudinaryCloud = config('tools.instagram.cloudinary_cloud_name');
+                $cloudinaryKey = config('tools.instagram.cloudinary_api_key');
+                $cloudinarySecret = config('tools.instagram.cloudinary_api_secret');
+                $useCloudinary = !empty($cloudinaryCloud) && !empty($cloudinaryKey) && !empty($cloudinarySecret);
+
+                if ($useCloudinary && !empty($jsonData['cloudinary_url'])) {
+                    return $this->formatScraperResult($reelId, $jsonData);
+                }
+
+                if (!$useCloudinary && file_exists($mp4File)) {
+                    return $this->formatScraperResult($reelId, $jsonData);
+                }
             }
         }
 
@@ -202,6 +213,11 @@ class InstagramScraperService
                         
                         // Rewrite JSON file with Cloudinary details
                         file_put_contents($jsonFile, json_encode($jsonData));
+
+                        // Immediately delete the local MP4 file to save disk space
+                        if (file_exists($mp4File)) {
+                            unlink($mp4File);
+                        }
                     } else {
                         Log::error("Cloudinary upload failed for Reel [{$reelId}]. Response: " . $response->body());
                     }
