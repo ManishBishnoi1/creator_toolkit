@@ -12,7 +12,8 @@
     </script>
 
     <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1613230266448965"
+    <meta name="google-adsense-account" content="ca-pub-1613230266484965">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1613230266484965"
      crossorigin="anonymous"></script>
 
     <meta charset="utf-8"/>
