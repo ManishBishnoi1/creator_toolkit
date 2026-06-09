@@ -11,6 +11,10 @@
       gtag('config', 'G-1EF1YE1HFX');
     </script>
 
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1613230266448965"
+     crossorigin="anonymous"></script>
+
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <meta name="csrf-token" content="{{ csrf_token() }}">
