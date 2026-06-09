@@ -3,10 +3,10 @@
     <section class="relative pt-16 pb-20 overflow-hidden bg-gradient-to-r from-[#e100ff] to-[#00b8ff] text-center px-gutter">
         <div class="max-w-4xl mx-auto space-y-4">
             <h1 class="font-display text-3xl md:text-4xl font-extrabold text-white tracking-tight">
-                Instagram Reels ab instantly download karo!
+                Download Instagram Reels Instantly!
             </h1>
             <p class="text-sm md:text-base text-white/90 font-medium max-w-2xl mx-auto">
-                No watermark, no login, direct HD download. Bas reel link paste karo aur video save karo.
+                No watermark, no login, direct HD download. Just paste the reel link and save the video.
             </p>
             
             <!-- Downloader Widget -->
@@ -21,10 +21,10 @@
         <section class="grid md:grid-cols-2 gap-12 items-center">
             <div class="space-y-4 text-left">
                 <h2 class="font-display text-2xl md:text-3xl font-extrabold text-[#1e2b49]">
-                    Instagram Reels Downloader Online: Reels Save Karna Hua Ab Super Easy!
+                    Instagram Reels Downloader Online: Saving Reels is Now Super Easy!
                 </h2>
                 <p class="text-sm text-slate-600 leading-relaxed font-normal">
-                    Instagram Reels download karna ab pehle se kahin zyada simple aur safe hai. Humare free downloader tool se aap kisi bhi reel video ko HD MP4 quality me directly apne phone ki gallery ya computer me save kar sakte hain. Sabse badhiya baat? Ye tool 100% free hai, Android aur iPhone dono par smoothly chalta hai, aur aapko koi login ya sign-up karne ki zaroorat nahi padti. Jab bhi koi mazedar reel dikhe, bas link copy karo aur download kar lo!
+                    Downloading Instagram Reels is now simpler and safer than ever. With our free downloader tool, you can save any reel video in HD MP4 quality directly to your phone's gallery or computer. The best part? This tool is 100% free, works smoothly on both Android and iPhone, and requires no login or sign-up. Whenever you see an interesting reel, just copy the link and download it!
                 </p>
                 <div class="inline-block bg-blue-50 text-blue-600 text-[10px] font-bold tracking-wider uppercase px-3 py-1.5 rounded">
                     # Photo & Image Sharing
@@ -45,26 +45,71 @@
             </div>
         </section>
 
+        <!-- Features Grid Section -->
+        <section class="space-y-10 reveal">
+            <div class="text-center space-y-3">
+                <h2 class="font-display text-2xl md:text-3xl font-extrabold text-[#1e2b49]">
+                    Features that make InstaReel Download the Best Downloader
+                </h2>
+                <p class="text-xs md:text-sm text-slate-500 max-w-2xl mx-auto">
+                    We offer a clean, robust, and lightning-fast downloading experience tailored for content creators and social media enthusiasts.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6 text-left">
+                <!-- Feature 1 -->
+                <div class="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow space-y-4">
+                    <div class="w-10 h-10 bg-indigo-50 text-[#5d3be8] rounded-xl flex items-center justify-center">
+                        <span class="material-symbols-outlined text-lg leading-none">hd</span>
+                    </div>
+                    <h3 class="font-display text-sm font-bold text-slate-800">1080p HD Downloads</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed font-normal">
+                        Save all your videos in high resolution with original audio bitrates. No compression or quality loss.
+                    </p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow space-y-4">
+                    <div class="w-10 h-10 bg-pink-50 text-pink-500 rounded-xl flex items-center justify-center">
+                        <span class="material-symbols-outlined text-lg leading-none">branding_watermark</span>
+                    </div>
+                    <h3 class="font-display text-sm font-bold text-slate-800">Zero Watermark</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed font-normal">
+                        Extract clean source videos without overlays, logos, or handles. Ideal for TikTok and YouTube Shorts repurposing.
+                    </p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow space-y-4">
+                    <div class="w-10 h-10 bg-blue-50 text-blue-500 rounded-xl flex items-center justify-center">
+                        <span class="material-symbols-outlined text-lg leading-none">security</span>
+                    </div>
+                    <h3 class="font-display text-sm font-bold text-slate-800">No Login Required</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed font-normal">
+                        Keep your profile details safe. Download anonymously without sharing passwords or API tokens.
+                    </p>
+                </div>
+            </div>
+        </section>
+
         <!-- Section 2: How to download Reels from Instagram? (Indigo Card) -->
         <section class="bg-[#5d3be8] text-white rounded-3xl p-8 md:p-12 shadow-xl text-center space-y-10">
             <h2 class="font-display text-2xl md:text-3xl font-extrabold">
-                Instagram se Reels kaise download karein? (3 Simple Steps)
+                How to Download Reels from Instagram? (3 Simple Steps)
             </h2>
             
             <div class="grid md:grid-cols-3 gap-8 text-left">
                 <!-- Step 1 -->
                 <div class="space-y-2">
-                    <h3 class="font-display text-lg font-bold">1. Link Copy Karo</h3>
+                    <h3 class="font-display text-lg font-bold">1. Copy URL Link</h3>
                     <p class="text-xs text-indigo-100 leading-relaxed font-light">
-                        Instagram app ya website open karein. Apni pasandida reel video select karke share button par click karein aur reel ka link copy kar lein.
+                        Open the Instagram app or website. Select your favorite reel video, click the share button, and copy the link.
                     </p>
                 </div>
                 
                 <!-- Step 2 -->
                 <div class="space-y-2">
-                    <h3 class="font-display text-lg font-bold">2. Link Paste Karo</h3>
+                    <h3 class="font-display text-lg font-bold">2. Paste URL Link</h3>
                     <p class="text-xs text-indigo-100 leading-relaxed font-light">
-                        Wapas humari website par aayein, top par diye gaye input box me link paste karein aur "Download Karo" button par click karein.
+                        Return to our website, paste the link into the input box at the top, and click the "Download" button.
                     </p>
                     <div class="inline-block bg-white/10 text-white text-[10px] font-semibold px-2.5 py-1 rounded mt-2">
                         # Computers & Electronics
@@ -73,9 +118,9 @@
                 
                 <!-- Step 3 -->
                 <div class="space-y-2">
-                    <h3 class="font-display text-lg font-bold">3. HD Video Save Karo</h3>
+                    <h3 class="font-display text-lg font-bold">3. Save HD Video</h3>
                     <p class="text-xs text-indigo-100 leading-relaxed font-light">
-                        Kuch hi seconds me preview mil jayega. Bas quality select karke download button dabaayein aur video seedhe device gallery me save ho jayegi!
+                        Get a preview in a few seconds. Simply select the quality, click the download button, and save the video directly to your device gallery!
                     </p>
                 </div>
             </div>
@@ -97,13 +142,45 @@
             <div class="space-y-4 text-left">
                 <p class="text-xs font-bold text-blue-600 tracking-wider uppercase">Fast and Secure Reels Download</p>
                 <h2 class="font-display text-2xl md:text-3xl font-extrabold text-[#1e2b49]">
-                    Super Fast & Secure Reels Download
+                    Super Fast &amp; Secure Reels Download
                 </h2>
                 <p class="text-sm text-slate-600 leading-relaxed font-normal">
-                    Hum aapse koi subscription nahi maangte aur na hi faltu ads se pareshaan karte hain. Humara target simple hai - sabhi creators aur users ko best quality downloading service dena. Instagram ki limitations ko bypass karke high resolution (1080p HD) me bina watermark reel download karein. Ye tool 100% secure hai aur aapka koi personal data ya login information store nahi karta. Full privacy ke saath reels gallery me save karein!
+                    We do not ask for any subscription nor do we annoy you with intrusive ads. Our target is simple - to provide all creators and users with the best quality downloading service. Bypass Instagram's limitations and save watermark-free reels in high resolution (1080p HD). This tool is 100% secure and does not store any personal data or login info. Save reels to your gallery with complete privacy!
                 </p>
                 <div class="inline-block bg-blue-50 text-blue-600 text-[10px] font-bold tracking-wider uppercase px-3 py-1.5 rounded">
                     # Download Managers
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust & Stats Section -->
+        <section class="bg-slate-50 border border-slate-100 rounded-3xl p-8 md:p-10 text-center space-y-8 reveal">
+            <div class="max-w-2xl mx-auto space-y-2">
+                <p class="text-[10px] font-extrabold text-[#5d3be8] uppercase tracking-wider">Creators Trust InstaReel Download</p>
+                <h3 class="font-display text-xl md:text-2xl font-extrabold text-[#1e2b49]">
+                    Why Over 1 Million Creators Choose Us
+                </h3>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- Stat 1 -->
+                <div class="space-y-1">
+                    <p class="font-display text-2xl md:text-3xl font-black text-[#5d3be8]">5M+</p>
+                    <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Videos Processed</p>
+                </div>
+                <!-- Stat 2 -->
+                <div class="space-y-1">
+                    <p class="font-display text-2xl md:text-3xl font-black text-pink-500">100%</p>
+                    <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Safe &amp; Private</p>
+                </div>
+                <!-- Stat 3 -->
+                <div class="space-y-1">
+                    <p class="font-display text-2xl md:text-3xl font-black text-blue-500">Zero</p>
+                    <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Popup Ads</p>
+                </div>
+                <!-- Stat 4 -->
+                <div class="space-y-1">
+                    <p class="font-display text-2xl md:text-3xl font-black text-green-500">3 Secs</p>
+                    <p class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Download Time</p>
                 </div>
             </div>
         </section>
@@ -127,10 +204,10 @@
             <!-- Right side: Content -->
             <div class="space-y-4 text-left">
                 <h3 class="font-display text-xl font-extrabold text-[#1e2b49]">
-                    Mobile App Se Fast Download Karo
+                    Fast Downloads with Mobile App
                 </h3>
                 <p class="text-xs text-slate-500 leading-relaxed">
-                    Only for Android: One click me photos, videos, reels aur IGTV videos download karein! Humara lightweight app bina kisi watermark ke top quality download speed deta hai. App install karein aur content offline enjoy karein.
+                    Only for Android: Download photos, videos, reels, and IGTV videos in one click! Our lightweight app provides top-quality download speeds without watermarks. Install the app and enjoy content offline.
                 </p>
                 <button type="button" class="bg-[#e60067] hover:bg-[#c80055] text-white font-bold text-xs px-6 py-3.5 rounded-lg flex items-center gap-2 cursor-pointer transition-colors shadow-md shadow-[#e60067]/15">
                     <span class="material-symbols-outlined text-sm">download</span>
@@ -138,6 +215,51 @@
                 </button>
             </div>
         </section>
+
+        <!-- Recent Blog Posts Section -->
+        @if(isset($recentPosts) && !$recentPosts->isEmpty())
+        <section class="space-y-10 reveal">
+            <div class="text-center space-y-3">
+                <h2 class="font-display text-2xl md:text-3xl font-extrabold text-[#1e2b49]">
+                    Latest from Our Blog
+                </h2>
+                <p class="text-xs md:text-sm text-slate-500 max-w-2xl mx-auto">
+                    Tips, hacks, and strategies to help you get the most out of your social media content workflow.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6 text-left">
+                @foreach($recentPosts as $post)
+                <article class="bg-white border border-slate-100 rounded-2xl overflow-hidden hover:shadow-lg transition-all flex flex-col justify-between p-6 group">
+                    <div class="space-y-3">
+                        <span class="inline-block text-[9px] text-[#5d3be8] font-extrabold uppercase tracking-widest bg-[#5d3be8]/5 px-2.5 py-1 rounded-full">
+                            # {{ $post->category_id ?: 'Guides' }}
+                        </span>
+                        <h3 class="font-display text-sm font-bold text-slate-800 group-hover:text-[#5d3be8] transition-colors leading-snug">
+                            <a href="{{ route('blog.show', $post->slug) }}">{{ $post->title }}</a>
+                        </h3>
+                        <p class="text-[11px] text-slate-500 leading-relaxed line-clamp-3">
+                            {{ Str::limit(strip_tags($post->content), 100) }}
+                        </p>
+                    </div>
+                    
+                    <div class="pt-4 border-t border-slate-100 mt-4 flex items-center justify-between text-[10px] font-bold text-slate-400">
+                        <span>{{ $post->published_at ? $post->published_at->format('M d, Y') : $post->created_at->format('M d, Y') }}</span>
+                        <a href="{{ route('blog.show', $post->slug) }}" class="text-[#5d3be8] hover:underline flex items-center gap-0.5">
+                            Read More <span class="material-symbols-outlined text-[11px] leading-none">chevron_right</span>
+                        </a>
+                    </div>
+                </article>
+                @endforeach
+            </div>
+            
+            <div class="text-center pt-2">
+                <a href="/blog" class="inline-block bg-[#5d3be8] hover:bg-[#4a2cc4] text-white text-xs font-bold px-6 py-3.5 rounded-lg transition-colors shadow-md shadow-indigo-150">
+                    Visit Our Blog
+                </a>
+            </div>
+        </section>
+        @endif
 
         <!-- Section 5: FAQ -->
         <section id="faq" class="space-y-10">
@@ -149,31 +271,31 @@
                 <!-- FAQ 1 -->
                 <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:border-blue-200 transition-colors">
                     <summary class="flex justify-between items-center p-5 cursor-pointer list-none text-slate-800 focus:outline-none font-bold text-sm md:text-base select-none">
-                        <span>Kya is tool se Instagram Reels download karna legal hai?</span>
+                        <span>Is it legal to download Instagram Reels using this tool?</span>
                         <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-slate-400">expand_more</span>
                     </summary>
                     <div class="p-5 pt-0 text-xs text-slate-500 leading-relaxed border-t border-slate-100">
-                        Haan, personal offline viewing ke liye Instagram Reels download karna bilkul safe aur legal hai. Lekin dhyan rahe ki content creators ke copyright ka respect karein. Kisi aur ke content ko bina permission ke republish, edit ya monetize mat karein.
+                        Yes, downloading Instagram Reels for personal offline viewing is completely safe and legal. However, please respect the copyright of content creators. Do not republish, edit, or monetize someone else's content without their permission.
                     </div>
                 </details>
 
                 <!-- FAQ 2 -->
                 <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:border-blue-200 transition-colors">
                     <summary class="flex justify-between items-center p-5 cursor-pointer list-none text-slate-800 focus:outline-none font-bold text-sm md:text-base select-none">
-                        <span>Kya reels download karne ke liye Instagram login details chahiye?</span>
+                        <span>Are Instagram login details required to download reels?</span>
                         <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-slate-400">expand_more</span>
                     </summary>
                     <div class="p-5 pt-0 border-t border-slate-100 space-y-4">
                         <p class="text-xs text-slate-500 leading-relaxed">
-                            Bilkul nahi! Humara tool use karne ke liye aapko koi Instagram account connect karne ki zaroorat nahi hai. Ye 100% anonymous aur safe hai, hum aapse koi username ya password nahi maangte.
+                            Absolutely not! You do not need to connect an Instagram account to use our tool. It is 100% anonymous and safe; we do not ask for your username or password.
                         </p>
                         
                         <!-- Discover Related Topics nested container -->
                         <div class="bg-slate-50 border border-slate-100 rounded-lg overflow-hidden text-left">
-                            <div class="px-4 py-2 border-b border-slate-150 bg-slate-100">
+                            <div class="px-4 py-2 border-b border-slate-200 bg-slate-100">
                                 <p class="text-[9px] font-bold text-slate-500 uppercase tracking-widest">Discover related topics</p>
                             </div>
-                            <div class="divide-y divide-slate-150 text-xs font-semibold text-blue-600">
+                            <div class="divide-y divide-slate-200 text-xs font-semibold text-blue-600">
                                 <a href="#" class="flex justify-between items-center px-4 py-2.5 hover:bg-slate-100/60 transition-colors">
                                     <span>Video Downloader on Insta</span>
                                     <span class="material-symbols-outlined text-slate-400 text-sm">chevron_right</span>
@@ -202,22 +324,22 @@
                 <!-- FAQ 3 -->
                 <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:border-blue-200 transition-colors">
                     <summary class="flex justify-between items-center p-5 cursor-pointer list-none text-slate-800 focus:outline-none font-bold text-sm md:text-base select-none">
-                        <span>Kya hum different quality aur formats me video save kar sakte hain?</span>
+                        <span>Can we save videos in different qualities and formats?</span>
                         <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-slate-400">expand_more</span>
                     </summary>
                     <div class="p-5 pt-0 text-xs text-slate-500 leading-relaxed border-t border-slate-100">
-                        Haan, humara downloader default roop se best available quality (mostly 1080p HD) fetch karta hai aur usse easily playable MP4 format me convert karke download link provide karta hai.
+                        Yes, our downloader fetches the best available quality (mostly 1080p HD) by default, converts it into an easily playable MP4 format, and provides the download link.
                     </div>
                 </details>
 
                 <!-- FAQ 4 -->
                 <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:border-blue-200 transition-colors">
                     <summary class="flex justify-between items-center p-5 cursor-pointer list-none text-slate-800 focus:outline-none font-bold text-sm md:text-base select-none">
-                        <span>Kya reels download karne ki koi limit hai?</span>
+                        <span>Is there a limit to the number of reels I can download?</span>
                         <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-slate-400">expand_more</span>
                     </summary>
                     <div class="p-5 pt-0 text-xs text-slate-500 leading-relaxed border-t border-slate-100">
-                        Nahi, koi limit nahi hai! Aap jitni chahein utni Reels, videos aur photos bilkul free me download kar sakte hain, bina kisi daily ya monthly capping ke.
+                        No, there is no limit! You can download as many Reels, videos, and photos as you want completely free, with no daily or monthly caps.
                     </div>
                 </details>
             </div>
@@ -234,34 +356,34 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Kya is tool se Instagram Reels download karna legal hai?",
+          "name": "Is it legal to download Instagram Reels using this tool?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Haan, personal offline viewing ke liye Instagram Reels download karna bilkul safe aur legal hai. Lekin dhyan rahe ki content creators ke copyright ka respect karein. Kisi aur ke content ko bina permission ke republish, edit ya monetize mat karein."
+            "text": "Yes, downloading Instagram Reels for personal offline viewing is completely safe and legal. However, please respect the copyright of content creators. Do not republish, edit, or monetize someone else's content without their permission."
           }
         },
         {
           "@type": "Question",
-          "name": "Kya reels download karne ke liye Instagram login details chahiye?",
+          "name": "Are Instagram login details required to download reels?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Bilkul nahi! Humara tool use karne ke liye aapko koi Instagram account connect karne ki zaroorat nahi hai. Ye 100% anonymous aur safe hai, hum aapse koi username ya password nahi maangte."
+            "text": "Absolutely not! You do not need to connect an Instagram account to use our tool. It is 100% anonymous and safe; we do not ask for your username or password."
           }
         },
         {
           "@type": "Question",
-          "name": "Kya hum different quality aur formats me video save kar sakte hain?",
+          "name": "Can we save videos in different qualities and formats?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Haan, humara downloader default roop se best available quality (mostly 1080p HD) fetch karta hai aur usse easily playable MP4 format me convert karke download link provide karta hai."
+            "text": "Yes, our downloader fetches the best available quality (mostly 1080p HD) by default, converts it into an easily playable MP4 format, and provides the download link."
           }
         },
         {
           "@type": "Question",
-          "name": "Kya reels download karne ki koi limit hai?",
+          "name": "Is there a limit to the number of reels I can download?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Nahi, koi limit nahi hai! Aap jitni chahein utni Reels, videos aur photos bilkul free me download kar sakte hain, bina kisi daily ya monthly capping ke."
+            "text": "No, there is no limit! You can download as many Reels, videos, and photos as you want completely free, with no daily or monthly caps."
           }
         }
       ]

@@ -1,33 +1,33 @@
 <x-layout>
-    <x-slot:title>Hamare Baare Mein - InstaReel Download | Instagram Reels Downloader</x-slot:title>
-    <x-slot:description>InstaReel Download ke baare mein jaanein — India ka sabse fast aur safe Instagram Reels, Photos aur Videos downloader tool. Free, no login, instant download.</x-slot:description>
+    <x-slot:title>About Us - InstaReel Download | Instagram Reels Downloader</x-slot:title>
+    <x-slot:description>Learn about InstaReel Download — the fastest and safest online tool to download Instagram Reels, Photos, and Videos for free. No login required.</x-slot:description>
 
     <div class="max-w-4xl mx-auto px-6 py-16 text-left space-y-8">
         <h1 class="font-display text-3xl font-extrabold text-[#1e2b49]">
-            Hamare Baare Mein
+            About Us
         </h1>
         
         <div class="prose prose-slate max-w-none text-slate-600 text-sm leading-relaxed space-y-6">
             <p>
-                <strong>InstaReel Download</strong> me aapka swagat hai — India ka sabse trusted aur fast Instagram content downloader. Hum Instagram Reels, Videos, Photos, Stories aur Highlights ko download karne ke liye ek simple, secure aur bilkul free tool provide karte hain.
+                Welcome to <strong>InstaReel Download</strong> — a trusted and fast Instagram content downloader. We provide a simple, secure, and completely free tool to download Instagram Reels, Videos, Photos, Stories, and Highlights.
             </p>
             
-            <h2 class="font-display text-xl font-bold text-slate-800 pt-4">Humara Mission</h2>
+            <h2 class="font-display text-xl font-bold text-slate-800 pt-4">Our Mission</h2>
             <p>
-                Hamara mission hai ki creators, social media managers aur digital marketers ko aisa tool milein jo content collection aur inspiration gathering ko super easy bana de. Hum chahte hain ki aapki favorite reels aur highlights download karna bilkul simple, fast aur ad-free experience ho — bina kisi hidden charges ya forced subscriptions ke.
+                Our mission is to provide creators, social media managers, and digital marketers with a tool that makes content collection and inspiration gathering super easy. We want downloading your favorite reels and highlights to be a completely simple, fast, and clean experience — with no hidden charges or forced subscriptions.
             </p>
             
-            <h2 class="font-display text-xl font-bold text-slate-800 pt-4">InstaReel Download Kyun Choose Karein?</h2>
+            <h2 class="font-display text-xl font-bold text-slate-800 pt-4">Why Choose InstaReel Download?</h2>
             <ul class="list-disc pl-5 space-y-2">
-                <li><strong>Uncompromising Quality:</strong> Hum content ko highest available resolution me serve karte hain — aapke videos sharp aur professional dikhen.</li>
-                <li><strong>No Registration Required:</strong> Complete anonymity. Koi account nahi, koi password nahi, koi personal details nahi.</li>
-                <li><strong>Fast &amp; Secure:</strong> Saare downloads securely process hote hain — aapka device spyware aur trackers se safe rehta hai.</li>
-                <li><strong>Fully Responsive:</strong> iPhone, Android smartphones, tablets aur desktop computers — sab par smoothly kaam karta hai.</li>
+                <li><strong>Uncompromising Quality:</strong> We serve content in the highest available resolution, ensuring your downloaded videos and images look sharp and professional.</li>
+                <li><strong>No Registration Required:</strong> Complete anonymity. No account, no password, no personal details needed.</li>
+                <li><strong>Fast &amp; Secure:</strong> All downloads are processed securely, keeping your device safe from spyware and trackers.</li>
+                <li><strong>Fully Responsive:</strong> Works smoothly on iPhone, Android smartphones, tablets, and desktop computers.</li>
             </ul>
 
-            <h2 class="font-display text-xl font-bold text-slate-800 pt-4">Contact Karein</h2>
+            <h2 class="font-display text-xl font-bold text-slate-800 pt-4">Get in Touch</h2>
             <p>
-                Koi question, feedback ya feature request hai? Hum sunne ke liye hamesha ready hain! Humse <a href="/contact" class="text-blue-600 font-semibold hover:underline">Contact Page</a> ke through reach out karein. Hum constantly apna toolkit improve karte rehte hain taaki aapko best experience mile.
+                Have a question, feedback, or feature suggestion? We are always ready to listen! Reach out to us through our <a href="/contact" class="text-blue-600 font-semibold hover:underline">Contact Page</a>. We constantly improve our toolkit to give you the best experience.
             </p>
         </div>
     </div>

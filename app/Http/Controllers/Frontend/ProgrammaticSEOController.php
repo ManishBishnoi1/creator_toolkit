@@ -46,10 +46,10 @@ class ProgrammaticSEOController extends Controller
     public function reels(): View
     {
         return $this->renderLanding(
-            'Instagram Reel Downloader - Reels Ab Instantly Save Karo Free!',
-            'Best free Instagram Reel Downloader. Kisi bhi reel ko 1080p HD MP4 me download karo bina watermark ke. iPhone, Android aur Desktop sab par kaam karta hai.',
-            ['instagram reels download karo', 'reels save karo free', 'reels downloader online', 'instagram reel downloader'],
-            'Instagram Reels Downloader - HD Reels Free Me Save Karo',
+            'Instagram Reel Downloader - Save Reels Instantly for Free!',
+            'Best free Instagram Reel Downloader. Save any reel in 1080p HD MP4 without watermarks. Works on iPhone, Android, and Desktop.',
+            ['instagram reels downloader', 'save reels online', 'free reels saver', 'download ig reels'],
+            'Instagram Reels Downloader - Save HD Reels for Free',
             'Reels',
             [
                 'Home' => '/',
@@ -57,25 +57,25 @@ class ProgrammaticSEOController extends Controller
             ],
             [
                 [
-                    'question' => 'Is tool se Instagram Reels kaise download karein?',
-                    'answer' => 'Instagram app ya website se reel ka URL copy karein, upar diye input box me paste karein, aur "Download Karo" button dabayein. Server video ko high quality me process karke seedha download link de deta hai.'
+                    'question' => 'How to download Instagram Reels using this tool?',
+                    'answer' => 'Copy the reel URL from the Instagram app or website, paste it in the input box above, and click the "Download" button. The server processes the video in high quality and provides a direct download link.'
                 ],
                 [
-                    'question' => 'Kya Reels download karna free hai?',
-                    'answer' => 'Haan! Humara Instagram Reels Downloader 100% free hai. Koi registration nahi, koi payment nahi, aur koi extension install karne ki zaroorat nahi.'
+                    'question' => 'Is it free to download Reels?',
+                    'answer' => 'Yes! Our Instagram Reels Downloader is 100% free. No registration, no payment, and no extension installation required.'
                 ],
                 [
-                    'question' => 'Kya iPhone se bhi Reels download kar sakte hain?',
-                    'answer' => 'Bilkul! Safari browser me humari website kholein, copied reel link paste karein, aur seedha apne iPhone me save kar lein. Ek ekdum smooth experience!'
+                    'question' => 'Can I download Reels on an iPhone?',
+                    'answer' => 'Absolutely! Open our website in Safari browser, paste the copied reel link, and save it directly to your iPhone. A completely smooth experience!'
                 ]
             ],
             [
-                'intro' => 'Sabse fast Instagram Reels Downloader tool — unlimited reels ko directly apni mobile gallery ya desktop me HD MP4 me save karo, bina watermark aur bina kisi copyright logo ke.',
-                'features_title' => 'Hamara Reels Downloader Kyun Choose Karein?',
+                'intro' => 'The fastest Instagram Reels Downloader tool — save unlimited reels directly to your mobile gallery or desktop in HD MP4, without watermarks or brand logos.',
+                'features_title' => 'Why Choose Our Reels Downloader?',
                 'features' => [
-                    'Unlimited Free Downloads: Jitni chahein utni Reels save karein, koi limit nahi.',
-                    'Highest Quality: Native 1080p resolution me crystal clear audio ke saath video download.',
-                    'Sabhi Devices Support: iPhone, iPad, Android aur Windows PC sab par perfectly kaam karta hai.'
+                    'Unlimited Free Downloads: Save as many Reels as you want, with no limits.',
+                    'Highest Quality: Download videos in native 1080p resolution with crystal clear audio.',
+                    'All Devices Supported: Works perfectly on iPhone, iPad, Android, and Windows PC.'
                 ]
             ]
         );
@@ -87,10 +87,10 @@ class ProgrammaticSEOController extends Controller
     public function stories(): View
     {
         return $this->renderLanding(
-            'Instagram Story Downloader - Stories & Highlights Online Save Karo',
-            'Instagram Stories aur Highlights ko free me online download karo. Private stories aur highlights ko high-quality MP4 ya photo me instantly save karo.',
-            ['instagram story downloader', 'instagram story save karo', 'ig stories download', 'ig highlight downloader'],
-            'Instagram Story Downloader - Stories 24 Ghante Se Pehle Save Karo!',
+            'Instagram Story Downloader - Save Stories & Highlights Online',
+            'Download Instagram Stories and Highlights online for free. Instantly save active stories and highlights in high-quality MP4 or photo format.',
+            ['instagram story downloader', 'save instagram story', 'ig stories downloader', 'ig highlight saver'],
+            'Instagram Story Downloader - Save Stories before they expire!',
             'Story',
             [
                 'Home' => '/',
@@ -98,21 +98,21 @@ class ProgrammaticSEOController extends Controller
             ],
             [
                 [
-                    'question' => 'Instagram Stories kaise download karein?',
-                    'answer' => 'Story ya highlight ka URL copy karein, humare search bar me paste karein, aur Download button click karein. Tool automatically media files parse karke download ready kar deta hai.'
+                    'question' => 'How to download Instagram Stories?',
+                    'answer' => 'Copy the story or highlight URL, paste it into our search bar, and click the Download button. The tool automatically parses the media files and prepares them for download.'
                 ],
                 [
-                    'question' => 'Kya story download karte waqt owner ko pata chalta hai?',
-                    'answer' => 'Nahi! Humara tool independent proxy rotators ke through kaam karta hai. Aapka download completely anonymous rehta hai aur profile owner ko kabhi notify nahi hota.'
+                    'question' => 'Will the profile owner know that I downloaded their story?',
+                    'answer' => 'No! Our tool runs anonymously through secure proxy servers. Your downloads are completely private and the profile owner is never notified.'
                 ]
             ],
             [
-                'intro' => 'Instagram Stories aur Highlights ko instantly download karein apne device me. 24 ghante me expire hone se pehle apne favorite creator ki updates save kar lo!',
+                'intro' => 'Download Instagram Stories and Highlights instantly to your device. Save your favorite creator\'s updates before they expire in 24 hours!',
                 'features_title' => 'Top Story Saver Features',
                 'features' => [
-                    'Completely Anonymous: Profile owner ko bina notify kiye safe private download.',
-                    'Highlight Downloads: Public profiles ke highlight clusters ko indefinitely download karein.',
-                    'Dynamic Extractor: Story videos ko MP4 me aur static images ko JPG me save karta hai.'
+                    'Completely Anonymous: Safe and private download without notifying the profile owner.',
+                    'Highlight Downloads: Download highlight clusters from public profiles indefinitely.',
+                    'Dynamic Extractor: Saves story videos in MP4 and static images in JPG format.'
                 ]
             ]
         );
@@ -124,10 +124,10 @@ class ProgrammaticSEOController extends Controller
     public function noWatermark(): View
     {
         return $this->renderLanding(
-            'Reel Downloader Without Watermark - Bina Watermark HD Reels Save Karo',
-            'Instagram Reels bina watermark, username handle ya logo ke download karo. 1080p HD MP4 me crystal clear audio ke saath original video save karo.',
-            ['reel downloader without watermark', 'bina watermark reels save', 'instagram reels no watermark download', 'ig reels no logo'],
-            'Instagram Reels Downloader (Bina Watermark) - Clean HD Video Save Karo',
+            'Reel Downloader Without Watermark - Save HD Reels Clean',
+            'Download Instagram Reels without watermarks, username handles, or logos. Save original videos in 1080p HD MP4 with crystal clear audio.',
+            ['reel downloader without watermark', 'instagram reels no watermark', 'clean reels download', 'ig reels no logo'],
+            'Instagram Reels Downloader (No Watermark) - Save Clean HD Video',
             'Reels',
             [
                 'Home' => '/',
@@ -135,17 +135,17 @@ class ProgrammaticSEOController extends Controller
             ],
             [
                 [
-                    'question' => 'Kya downloaded Reels me koi watermark hoga?',
-                    'answer' => 'Bilkul nahi! Humara downloader CDN se original raw MP4 file extract karta hai. Output video me koi watermark, text handle ya logo screen nahi hota.'
+                    'question' => 'Will the downloaded Reels contain any watermark?',
+                    'answer' => 'Absolutely not! Our downloader extracts the raw MP4 source file directly from the CDN. The output video is clean without watermark, text overlays, or logo screens.'
                 ]
             ],
             [
-                'intro' => 'Original Instagram Reels bina kisi watermark, text overlay ya branding logo ke download karo. Content creators ke liye perfect tool jo YouTube Shorts ya TikTok ke liye content repurpose karna chahte hain.',
-                'features_title' => 'Content Creators Ke Liye Key Benefits',
+                'intro' => 'Download original Instagram Reels without any watermark, text overlay, or branding logo. Perfect for content creators who want to repurpose content for YouTube Shorts or TikTok.',
+                'features_title' => 'Key Benefits for Content Creators',
                 'features' => [
-                    'Zero Overlays: Username branding ke bina clean, original video source.',
-                    'DASH Format Merging: High bitrate audio ke saath crystal clear 1080p video.',
-                    'Instant Processing: Seconds me scrape, merge aur download-ready video.'
+                    'Clean Source: Clean, original video source without username branding.',
+                    'Crystal Clear Audio: Crystal clear 1080p video with high bitrate audio.',
+                    'Instant Processing: Scrape, merge, and get download-ready videos in seconds.'
                 ]
             ]
         );
@@ -157,10 +157,10 @@ class ProgrammaticSEOController extends Controller
     public function videos(): View
     {
         return $this->renderLanding(
-            'Instagram Video Downloader - IG Videos Online Save Karo Free',
-            'Instagram feed videos aur posts ko free me online download karo. Kisi bhi public Instagram video ko directly high-quality MP4 me mobile ya desktop par convert karo.',
-            ['instagram video downloader', 'instagram videos download karo', 'ig videos save karo', 'instagram to mp4 convert'],
-            'Instagram Video Downloader - Feed Videos HD Me Save Karo',
+            'Instagram Video Downloader - Save IG Videos Online for Free',
+            'Download Instagram feed videos and posts online for free. Instantly convert any public Instagram video directly into high-quality MP4 on mobile or desktop.',
+            ['instagram video downloader', 'save instagram videos', 'ig video downloader', 'instagram to mp4 converter'],
+            'Instagram Video Downloader - Save Feed Videos in HD',
             'Video',
             [
                 'Home' => '/',
@@ -168,17 +168,17 @@ class ProgrammaticSEOController extends Controller
             ],
             [
                 [
-                    'question' => 'Kya long videos ya IGTV bhi download kar sakte hain?',
-                    'answer' => 'Haan! Humara downloader standard posts, Reels aur purane IGTV video URLs sab support karta hai. Download karne ki koi length limit nahi hai.'
+                    'question' => 'Can I download long videos or IGTV content?',
+                    'answer' => 'Yes! Our downloader supports standard posts, Reels, and IGTV video URLs. There is no length limit on video downloads.'
                 ]
             ],
             [
-                'intro' => 'Instagram feed posts aur video clips ko instantly save karo. Kisi bhi public Instagram video ko HD MP4 me convert karke offline ads-free enjoy karo.',
-                'features_title' => 'Robust Instagram Video Downloader Features',
+                'intro' => 'Save Instagram feed posts and video clips instantly. Convert any public Instagram video into HD MP4 to enjoy offline without ads.',
+                'features_title' => 'Instagram Video Downloader Features',
                 'features' => [
-                    'Fast MP4 Converter: Raw high bitrate video streams extract aur convert karta hai.',
-                    'Unlimited Bandwidth: Cloud-hosted delivery se zero buffering guarantee.',
-                    'No Registration: Site kholein, link paste karein aur download kar lein — simple!'
+                    'Fast MP4 Converter: Extracts and converts raw high-bitrate video streams.',
+                    'Unlimited Bandwidth: Zero buffering guarantee with cloud-hosted delivery.',
+                    'No Registration: Open the site, paste the link, and download — simple!'
                 ]
             ]
         );
@@ -190,10 +190,10 @@ class ProgrammaticSEOController extends Controller
     public function photos(): View
     {
         return $this->renderLanding(
-            'Instagram Photo Downloader - HD Photos aur Images Free Download',
-            'Instagram photos, profile images aur post thumbnails ko high resolution me download karo. Sabse fast online tool jo Instagram photos ko JPG ya PNG me save karta hai.',
-            ['instagram photo downloader', 'instagram photos download karo', 'ig photos save', 'ig image downloader'],
-            'Instagram Photo Downloader - Original HD Photos Free Me Save Karo',
+            'Instagram Photo Downloader - Save HD Photos & Images Free',
+            'Download Instagram photos, profile images, and post thumbnails in high resolution. Fastest online tool to save Instagram photos in JPG or PNG format.',
+            ['instagram photo downloader', 'save instagram photos', 'ig image downloader', 'download instagram pics'],
+            'Instagram Photo Downloader - Save Original HD Photos for Free',
             'Photo',
             [
                 'Home' => '/',
@@ -201,17 +201,17 @@ class ProgrammaticSEOController extends Controller
             ],
             [
                 [
-                    'question' => 'Instagram se high-resolution photos kaise download karein?',
-                    'answer' => 'Post ka link copy karein, humara input field me paste karein aur Download click karein. Tool automatically highest resolution source image (1080px tak) extract karke download ke liye ready kar deta hai.'
+                    'question' => 'How to download high-resolution photos from Instagram?',
+                    'answer' => 'Copy the post link, paste it into our input field, and click Download. The tool automatically extracts the highest resolution source image (up to 1080px) and prepares it for download.'
                 ]
             ],
             [
-                'intro' => 'Instagram se directly high-definition photos aur images download karo. Standard context menu blocks ko bypass karke original JPG source file extract karta hai.',
-                'features_title' => 'HD Images Instantly Download Karo',
+                'intro' => 'Download high-definition photos and images directly from Instagram. Bypasses standard right-click protection to extract original JPG source files.',
+                'features_title' => 'Download HD Images Instantly',
                 'features' => [
-                    'Original Resolution: 1080p source image ko scrape aur extract karta hai.',
-                    'Fast JPG Extractor: Instagram blocks bypass karke directly photos download karta hai.',
-                    'Secure Image Proxying: Browser CORS errors bypass karne ke liye CDNs securely proxy karta hai.'
+                    'Original Resolution: Scrapes and extracts the original 1080p source image.',
+                    'Fast JPG Extractor: Bypasses Instagram blocks to download photos directly.',
+                    'Secure Image Proxying: Securely proxies CDNs to bypass browser CORS errors.'
                 ]
             ]
         );
@@ -223,10 +223,10 @@ class ProgrammaticSEOController extends Controller
     public function carousel(): View
     {
         return $this->renderLanding(
-            'Instagram Carousel Downloader - Album ke Saare Slides Save Karo',
-            'Instagram Carousel posts me multiple photos ya videos ko online download karo. Slides, albums aur side-by-side posts ko high quality me free me save karo.',
-            ['instagram carousel downloader', 'instagram album download', 'ig slides save karo', 'instagram multiple photos download'],
-            'Instagram Carousel Downloader - Poora Album Ek Click Me Save Karo',
+            'Instagram Carousel Downloader - Save All Album Slides Online',
+            'Download multiple photos or videos from Instagram Carousel posts online. Save slides, albums, and side-by-side posts in high quality for free.',
+            ['instagram carousel downloader', 'save instagram album', 'ig carousel saver', 'download ig slides'],
+            'Instagram Carousel Downloader - Save the Entire Album in One Click',
             'Highlights',
             [
                 'Home' => '/',
@@ -234,17 +234,17 @@ class ProgrammaticSEOController extends Controller
             ],
             [
                 [
-                    'question' => 'Ek Instagram Carousel post ke saare photos kaise save karein?',
-                    'answer' => 'Carousel URL humara search bar me paste karein. Tool link parse karega, saare slide items extract karega aur album me har photo aur video ke liye individual download buttons show karega.'
+                    'question' => 'How to save all photos from an Instagram Carousel post?',
+                    'answer' => 'Paste the Carousel URL in our search bar. The tool will parse the link, extract all slide items, and show individual download buttons for each photo and video in the album.'
                 ]
             ],
             [
-                'intro' => 'Instagram ke full album aur slide posts jisme multiple photos aur videos hain unhe download karo. Link ek baar paste karo aur har slide ko original HD quality me individually save karo.',
+                'intro' => 'Download full albums and slide posts containing multiple photos and videos from Instagram. Paste the link once and save each slide individually in original HD quality.',
                 'features_title' => 'Full Album Parsing Features',
                 'features' => [
-                    'Slide Separation: Single carousel ke andar saare photos aur videos alag kar deta hai.',
-                    'Bulk Item Processing: Saare slides ki fast retrieval aur proxy rendering.',
-                    'Multi-Format Support: Slide videos ko MP4 aur slide photos ko JPG me save karta hai.'
+                    'Slide Separation: Separates all photos and videos within a single carousel.',
+                    'Bulk Item Processing: Fast retrieval and proxy rendering of all slides.',
+                    'Multi-Format Support: Saves slide videos in MP4 and slide photos in JPG.'
                 ]
             ]
         );

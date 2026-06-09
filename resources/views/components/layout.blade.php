@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html class="scroll-smooth" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1EF1YE1HFX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-1EF1YE1HFX');
+    </script>
+
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <meta name="csrf-token" content="{{ csrf_token() }}">

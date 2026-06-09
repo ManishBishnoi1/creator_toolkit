@@ -1,12 +1,14 @@
 <nav class="w-full z-50 bg-white border-b border-slate-100 py-3 px-6">
     <div class="max-w-7xl mx-auto flex justify-between items-center">
-        <!-- Spacer to balance language dropdown for perfect alignment -->
-        <div class="w-16"></div>
+        <!-- Nav Links -->
+        <div class="flex items-center gap-6">
+            <a href="/blog" class="text-xs font-bold text-slate-600 hover:text-slate-900 transition-colors uppercase tracking-wide">Blog</a>
+        </div>
         
         <!-- Centered Logo -->
         <a href="/" class="flex items-center gap-2 font-display text-2xl font-black tracking-tight">
-            <img src="{{ asset('images/logo.png') }}" alt="SSS Instagram Logo" class="h-8 w-auto">
-            <span class="text-slate-800">SSS Instagram</span>
+            <img src="{{ asset('images/logo.png') }}" alt="InstaReel Download Logo" class="h-8 w-auto">
+            <span class="text-slate-800">InstaReel Download</span>
         </a>
         
         <!-- Right-aligned Language Selection -->

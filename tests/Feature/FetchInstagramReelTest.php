@@ -46,7 +46,7 @@ class FetchInstagramReelTest extends TestCase
                     'id' => 'C9xYzABC123',
                     'type' => 'video',
                     'title' => 'Test Instagram Reel Title',
-                    'video_url' => route('tools.stream-video', ['url' => 'https://instagram.example.com/video.mp4']),
+                    'video_url' => 'https://instagram.example.com/video.mp4',
                     'thumbnail_url' => route('tools.proxy-image', ['url' => 'https://instagram.example.com/thumbnail.jpg']),
                     'duration' => 15,
                     'owner' => [

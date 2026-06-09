@@ -1,14 +1,14 @@
 <x-layout>
-    <x-slot:title>Contact Karein - InstaReel Download | Instagram Reels Downloader</x-slot:title>
-    <x-slot:description>InstaReel Download team se contact karein — support, feature suggestions ya koi bhi query ke liye. Hum aapki madad karne ke liye taiyaar hain!</x-slot:description>
+    <x-slot:title>Contact Us - InstaReel Download | Instagram Reels Downloader</x-slot:title>
+    <x-slot:description>Contact the InstaReel Download team — for support, feature suggestions, or any other queries. We are ready to help you!</x-slot:description>
 
     <div class="max-w-xl mx-auto px-6 py-16 text-left space-y-8">
         <div class="space-y-2">
             <h1 class="font-display text-3xl font-extrabold text-[#1e2b49]">
-                Humse Baat Karein
+                Contact Us
             </h1>
             <p class="text-xs text-slate-500">
-                Koi question hai ya feedback dena chahte hain? Neeche form fill karein aur hum jald se jald reply karenge.
+                Have a question or want to share feedback? Fill out the form below and we will reply as soon as possible.
             </p>
         </div>
 
@@ -33,14 +33,14 @@
             
             <!-- Name -->
             <div class="space-y-1.5">
-                <label for="name" class="block text-xs font-bold text-slate-700 uppercase tracking-wide">Aapka Naam</label>
+                <label for="name" class="block text-xs font-bold text-slate-700 uppercase tracking-wide">Your Name</label>
                 <input 
                     type="text" 
                     name="name" 
                     id="name" 
                     required 
                     value="{{ old('name') }}" 
-                    placeholder="Jaise: Rahul Sharma"
+                    placeholder="e.g. John Doe"
                     class="w-full bg-slate-50 border border-slate-200 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 rounded-lg px-3 py-2.5 text-xs text-slate-800 placeholder:text-slate-400 focus:outline-none"
                 />
             </div>
@@ -54,29 +54,28 @@
                     id="email" 
                     required 
                     value="{{ old('email') }}" 
-                    placeholder="aapka@email.com"
+                    placeholder="you@example.com"
                     class="w-full bg-slate-50 border border-slate-200 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 rounded-lg px-3 py-2.5 text-xs text-slate-800 placeholder:text-slate-400 focus:outline-none"
                 />
             </div>
 
             <!-- Message -->
             <div class="space-y-1.5">
-                <label for="message" class="block text-xs font-bold text-slate-700 uppercase tracking-wide">Aapka Message</label>
+                <label for="message" class="block text-xs font-bold text-slate-700 uppercase tracking-wide">Your Message</label>
                 <textarea 
                     name="message" 
                     id="message" 
                     rows="5" 
                     required 
-                    placeholder="Apna question ya feedback yahan likhein..."
+                    placeholder="Write your question or feedback here..."
                     class="w-full bg-slate-50 border border-slate-200 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 rounded-lg px-3 py-2.5 text-xs text-slate-800 placeholder:text-slate-400 focus:outline-none"
                 >{{ old('message') }}</textarea>
             </div>
 
             <!-- Submit Button -->
             <button type="submit" class="w-full bg-[#e60067] hover:bg-[#c80055] text-white font-bold text-xs py-3.5 rounded-lg uppercase tracking-wider transition-colors cursor-pointer text-center">
-                Message Bhejo
+                Send Message
             </button>
         </form>
     </div>
 </x-layout>
-
