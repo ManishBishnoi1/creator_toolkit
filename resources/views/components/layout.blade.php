@@ -37,20 +37,10 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
     <style>
-        /* FOUC (Flash of Unstyled Content) Prevention */
-        body {
-            background-color: #ffffff;
-            color: #1e293b;
-            font-family: 'Inter', sans-serif;
-            opacity: 0;
-            transition: opacity 0.15s ease-in-out;
-        }
-        body.loaded {
-            opacity: 1;
-        }
         .reveal {
             opacity: 0;
             transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
         }
         .reveal.visible {
             opacity: 1;
@@ -102,13 +92,6 @@
             nav.classList.add('bg-black/60', 'backdrop-blur-lg', 'border-white/10', 'shadow-2xl', 'py-2');
         }
     }
-
-    // Add loaded class to body to reveal content once styles compile
-    document.addEventListener("DOMContentLoaded", function() {
-        setTimeout(function() {
-            document.body.classList.add('loaded');
-        }, 150);
-    });
 </script>
 </body>
 </html>

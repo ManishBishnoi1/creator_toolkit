@@ -12,7 +12,7 @@
         
         <!-- Logo -->
         <a href="/" class="flex items-center gap-1.5 font-display text-lg font-bold mt-2">
-            <img src="{{ asset('images/logo.png') }}" alt="InstaReel Download Logo" class="h-6 w-auto">
+            <img src="{{ asset('images/logo.png') }}" alt="InstaReel Download Logo" class="h-6 w-auto" width="24" height="24">
             <span class="text-slate-800 text-sm font-black">InstaReel Download</span>
         </a>
         

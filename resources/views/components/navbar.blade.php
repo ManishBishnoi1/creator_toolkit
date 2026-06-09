@@ -7,7 +7,7 @@
         
         <!-- Centered Logo -->
         <a href="/" class="flex items-center gap-2 font-display text-2xl font-black tracking-tight">
-            <img src="{{ asset('images/logo.png') }}" alt="InstaReel Download Logo" class="h-8 w-auto">
+            <img src="{{ asset('images/logo.png') }}" alt="InstaReel Download Logo" class="h-8 w-auto" width="32" height="32">
             <span class="text-slate-800">InstaReel Download</span>
         </a>
         
