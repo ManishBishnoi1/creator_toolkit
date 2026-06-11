@@ -271,23 +271,23 @@
                 <!-- FAQ 1 -->
                 <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:border-blue-200 transition-colors">
                     <summary class="flex justify-between items-center p-5 cursor-pointer list-none text-slate-800 focus:outline-none font-bold text-sm md:text-base select-none">
-                        <span>Is it legal to download Instagram Reels using this tool?</span>
+                        <span>How to download Instagram Reels?</span>
                         <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-slate-400">expand_more</span>
                     </summary>
                     <div class="p-5 pt-0 text-xs text-slate-500 leading-relaxed border-t border-slate-100">
-                        Yes, downloading Instagram Reels for personal offline viewing is completely safe and legal. However, please respect the copyright of content creators. Do not republish, edit, or monetize someone else's content without their permission.
+                        Copy the Reel URL from Instagram, paste it into the downloader input box above, and click Download. The tool quickly generates an HD file you can save to your device.
                     </div>
                 </details>
 
                 <!-- FAQ 2 -->
                 <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:border-blue-200 transition-colors">
                     <summary class="flex justify-between items-center p-5 cursor-pointer list-none text-slate-800 focus:outline-none font-bold text-sm md:text-base select-none">
-                        <span>Are Instagram login details required to download reels?</span>
+                        <span>Is this reel downloader free?</span>
                         <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-slate-400">expand_more</span>
                     </summary>
                     <div class="p-5 pt-0 border-t border-slate-100 space-y-4">
                         <p class="text-xs text-slate-500 leading-relaxed">
-                            Absolutely not! You do not need to connect an Instagram account to use our tool. It is 100% anonymous and safe; we do not ask for your username or password.
+                            Yes. The tool is free to use with no signup, no paid plan, and no hidden subscription required for standard reel downloads.
                         </p>
                         
                         <!-- Discover Related Topics nested container -->
@@ -324,22 +324,22 @@
                 <!-- FAQ 3 -->
                 <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:border-blue-200 transition-colors">
                     <summary class="flex justify-between items-center p-5 cursor-pointer list-none text-slate-800 focus:outline-none font-bold text-sm md:text-base select-none">
-                        <span>Can we save videos in different qualities and formats?</span>
+                        <span>Can I download reels without login?</span>
                         <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-slate-400">expand_more</span>
                     </summary>
                     <div class="p-5 pt-0 text-xs text-slate-500 leading-relaxed border-t border-slate-100">
-                        Yes, our downloader fetches the best available quality (mostly 1080p HD) by default, converts it into an easily playable MP4 format, and provides the download link.
+                        Yes. You can download public Instagram reels without logging in. We do not ask for your Instagram username or password.
                     </div>
                 </details>
 
                 <!-- FAQ 4 -->
                 <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:border-blue-200 transition-colors">
                     <summary class="flex justify-between items-center p-5 cursor-pointer list-none text-slate-800 focus:outline-none font-bold text-sm md:text-base select-none">
-                        <span>Is there a limit to the number of reels I can download?</span>
+                        <span>Is it safe to use?</span>
                         <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-slate-400">expand_more</span>
                     </summary>
                     <div class="p-5 pt-0 text-xs text-slate-500 leading-relaxed border-t border-slate-100">
-                        No, there is no limit! You can download as many Reels, videos, and photos as you want completely free, with no daily or monthly caps.
+                        Yes. The downloader works without account authorization and does not require sensitive credentials, making it a safer way to save public reel content.
                     </div>
                 </details>
             </div>
@@ -356,34 +356,34 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Is it legal to download Instagram Reels using this tool?",
+                    "name": "How to download Instagram Reels?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, downloading Instagram Reels for personal offline viewing is completely safe and legal. However, please respect the copyright of content creators. Do not republish, edit, or monetize someone else's content without their permission."
+                        "text": "Copy the Reel URL from Instagram, paste it into the downloader input box above, and click Download. The tool quickly generates an HD file you can save to your device."
           }
         },
         {
           "@type": "Question",
-          "name": "Are Instagram login details required to download reels?",
+                    "name": "Is this reel downloader free?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Absolutely not! You do not need to connect an Instagram account to use our tool. It is 100% anonymous and safe; we do not ask for your username or password."
+                        "text": "Yes. The tool is free to use with no signup, no paid plan, and no hidden subscription required for standard reel downloads."
           }
         },
         {
           "@type": "Question",
-          "name": "Can we save videos in different qualities and formats?",
+                    "name": "Can I download reels without login?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, our downloader fetches the best available quality (mostly 1080p HD) by default, converts it into an easily playable MP4 format, and provides the download link."
+                        "text": "Yes. You can download public Instagram reels without logging in. We do not ask for your Instagram username or password."
           }
         },
         {
           "@type": "Question",
-          "name": "Is there a limit to the number of reels I can download?",
+                    "name": "Is it safe to use?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No, there is no limit! You can download as many Reels, videos, and photos as you want completely free, with no daily or monthly caps."
+                        "text": "Yes. The downloader works without account authorization and does not require sensitive credentials, making it a safer way to save public reel content."
           }
         }
       ]

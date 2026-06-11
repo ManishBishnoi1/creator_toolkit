@@ -43,8 +43,10 @@ Route::get('/sitemap.xml', [PageController::class, 'sitemap'])->name('pages.site
 use App\Http\Controllers\Frontend\ProgrammaticSEOController;
 
 Route::get('/download-instagram-reels', [ProgrammaticSEOController::class, 'reels'])->name('seo.reels');
+Route::get('/instagram-reel-downloader', [ProgrammaticSEOController::class, 'reels'])->name('seo.reels.alias');
 Route::get('/instagram-story-downloader', [ProgrammaticSEOController::class, 'stories'])->name('seo.stories');
 Route::get('/download-reels-without-watermark', [ProgrammaticSEOController::class, 'noWatermark'])->name('seo.no-watermark');
 Route::get('/instagram-video-saver', [ProgrammaticSEOController::class, 'videos'])->name('seo.videos');
+Route::get('/instagram-video-downloader', [ProgrammaticSEOController::class, 'videos'])->name('seo.videos.alias');
 Route::get('/instagram-photo-downloader', [ProgrammaticSEOController::class, 'photos'])->name('seo.photos');
 Route::get('/instagram-carousel-downloader', [ProgrammaticSEOController::class, 'carousel'])->name('seo.carousel');

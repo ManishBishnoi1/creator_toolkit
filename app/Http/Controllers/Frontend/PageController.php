@@ -70,6 +70,7 @@ class PageController extends Controller
     {
         $urls = [
             ['loc' => url('/'), 'changefreq' => 'daily', 'priority' => '1.0'],
+            ['loc' => url('/blog'), 'changefreq' => 'daily', 'priority' => '0.9'],
             ['loc' => url('/about'), 'changefreq' => 'monthly', 'priority' => '0.8'],
             ['loc' => url('/contact'), 'changefreq' => 'monthly', 'priority' => '0.8'],
             ['loc' => url('/privacy'), 'changefreq' => 'monthly', 'priority' => '0.8'],
@@ -77,9 +78,11 @@ class PageController extends Controller
             ['loc' => url('/dmca'), 'changefreq' => 'monthly', 'priority' => '0.8'],
             // Programmatic SEO landing pages
             ['loc' => url('/download-instagram-reels'), 'changefreq' => 'weekly', 'priority' => '0.9'],
+            ['loc' => url('/instagram-reel-downloader'), 'changefreq' => 'weekly', 'priority' => '0.9'],
             ['loc' => url('/instagram-story-downloader'), 'changefreq' => 'weekly', 'priority' => '0.9'],
             ['loc' => url('/download-reels-without-watermark'), 'changefreq' => 'weekly', 'priority' => '0.9'],
             ['loc' => url('/instagram-video-saver'), 'changefreq' => 'weekly', 'priority' => '0.9'],
+            ['loc' => url('/instagram-video-downloader'), 'changefreq' => 'weekly', 'priority' => '0.9'],
             ['loc' => url('/instagram-photo-downloader'), 'changefreq' => 'weekly', 'priority' => '0.9'],
             ['loc' => url('/instagram-carousel-downloader'), 'changefreq' => 'weekly', 'priority' => '0.9'],
         ];
