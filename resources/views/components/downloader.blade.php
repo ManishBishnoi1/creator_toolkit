@@ -1,23 +1,23 @@
 <div class="w-full max-w-3xl mx-auto px-4" x-data="downloaderForm()">
     <!-- Tabs Navigation -->
     <div class="flex flex-wrap justify-center gap-2 mb-8 text-[11px] font-bold text-white/95">
-        <a href="#" class="flex items-center gap-1.5 px-4 py-2 rounded-full border border-white/10 hover:border-white/30 hover:text-white transition-colors bg-white/5">
+        <a href="/instagram-video-downloader" class="flex items-center gap-1.5 px-4 py-2 rounded-full border border-white/10 hover:border-white/30 hover:text-white transition-colors bg-white/5">
             <span class="material-symbols-outlined text-[13px]">smart_display</span>
             <span>Video</span>
         </a>
-        <a href="#" class="flex items-center gap-1.5 px-4 py-2 rounded-full border border-white/10 hover:border-white/30 hover:text-white transition-colors bg-white/5">
+        <a href="/instagram-photo-downloader" class="flex items-center gap-1.5 px-4 py-2 rounded-full border border-white/10 hover:border-white/30 hover:text-white transition-colors bg-white/5">
             <span class="material-symbols-outlined text-[13px]">image</span>
             <span>Photo</span>
         </a>
-        <a href="#" class="flex items-center gap-1.5 px-4 py-2 rounded-full border border-white/30 text-white bg-white/20">
+        <a href="/download-instagram-reels" class="flex items-center gap-1.5 px-4 py-2 rounded-full border border-white/30 text-white bg-white/20">
             <span class="material-symbols-outlined text-[13px]">motion_photos_on</span>
             <span>Reels</span>
         </a>
-        <a href="#" class="flex items-center gap-1.5 px-4 py-2 rounded-full border border-white/10 hover:border-white/30 hover:text-white transition-colors bg-white/5">
+        <a href="/instagram-story-downloader" class="flex items-center gap-1.5 px-4 py-2 rounded-full border border-white/10 hover:border-white/30 hover:text-white transition-colors bg-white/5">
             <span class="material-symbols-outlined text-[13px]">history_toggle_off</span>
             <span>Story</span>
         </a>
-        <a href="#" class="flex items-center gap-1.5 px-4 py-2 rounded-full border border-white/10 hover:border-white/30 hover:text-white transition-colors bg-white/5">
+        <a href="/instagram-highlights-downloader" class="flex items-center gap-1.5 px-4 py-2 rounded-full border border-white/10 hover:border-white/30 hover:text-white transition-colors bg-white/5">
             <span class="material-symbols-outlined text-[13px]">star</span>
             <span>Highlights</span>
         </a>

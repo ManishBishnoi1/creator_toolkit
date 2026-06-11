@@ -84,6 +84,7 @@ class PageController extends Controller
             ['loc' => url('/instagram-video-saver'), 'changefreq' => 'weekly', 'priority' => '0.9'],
             ['loc' => url('/instagram-video-downloader'), 'changefreq' => 'weekly', 'priority' => '0.9'],
             ['loc' => url('/instagram-photo-downloader'), 'changefreq' => 'weekly', 'priority' => '0.9'],
+            ['loc' => url('/instagram-highlights-downloader'), 'changefreq' => 'weekly', 'priority' => '0.9'],
             ['loc' => url('/instagram-carousel-downloader'), 'changefreq' => 'weekly', 'priority' => '0.9'],
         ];
 

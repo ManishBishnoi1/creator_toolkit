@@ -218,6 +218,47 @@ class ProgrammaticSEOController extends Controller
     }
 
     /**
+     * /instagram-highlights-downloader
+     */
+    public function highlights(): View
+    {
+        return $this->renderLanding(
+            'Instagram Highlights Downloader - Save Highlight Videos & Photos',
+            'Download Instagram Highlights online for free. Save public highlight videos and photos in high quality without login on iPhone, Android, or desktop.',
+            ['instagram highlights downloader', 'save instagram highlights', 'ig highlight downloader', 'download instagram highlights'],
+            'Instagram Highlights Downloader - Save Highlights in HD',
+            'Highlights',
+            [
+                'Home' => '/',
+                'Highlights Downloader' => '/instagram-highlights-downloader'
+            ],
+            [
+                [
+                    'question' => 'How do I download Instagram Highlights?',
+                    'answer' => 'Copy the highlight URL from a public Instagram profile, paste it into the downloader field, and click Download. The tool prepares available highlight photos and videos for saving.'
+                ],
+                [
+                    'question' => 'Can I save Highlight videos and photos?',
+                    'answer' => 'Yes. Public Instagram Highlights can include both videos and images, and the downloader supports saving available media in MP4 or JPG format.'
+                ],
+                [
+                    'question' => 'Do I need to log in to download Highlights?',
+                    'answer' => 'No. You can download public Instagram Highlights without sharing your Instagram username, password, or any account credentials.'
+                ]
+            ],
+            [
+                'intro' => 'Save Instagram Highlights from public profiles before they change or disappear. Download highlight videos and photos in high quality for offline viewing, archiving, or creator research.',
+                'features_title' => 'Instagram Highlights Saver Features',
+                'features' => [
+                    'Video and Photo Support: Download available Highlight videos in MP4 and images in JPG.',
+                    'No Login Required: Save public Highlight media without connecting your Instagram account.',
+                    'Works on Every Device: Use the Highlights Downloader from mobile, tablet, or desktop browsers.'
+                ]
+            ]
+        );
+    }
+
+    /**
      * /instagram-carousel-downloader
      */
     public function carousel(): View
