@@ -46,10 +46,10 @@ class ProgrammaticSEOController extends Controller
     public function reels(): View
     {
         return $this->renderLanding(
-            'Instagram Reel Downloader - Save Reels Instantly for Free!',
-            'Best free Instagram Reel Downloader. Save any reel in 1080p HD MP4 without watermarks. Works on iPhone, Android, and Desktop.',
-            ['instagram reels downloader', 'save reels online', 'free reels saver', 'download ig reels'],
-            'Instagram Reels Downloader - Save HD Reels for Free',
+            'Instagram Reel Downloader - Download Reels in HD',
+            'Download public Instagram Reels as MP4 files. Paste a Reel link to preview and save the video on iPhone, Android, or desktop—free and without signing up.',
+            ['instagram reel downloader', 'download instagram reels', 'save instagram reels', 'instagram reels to mp4'],
+            'Instagram Reel Downloader',
             'Reels',
             [
                 'Home' => '/',
@@ -57,25 +57,49 @@ class ProgrammaticSEOController extends Controller
             ],
             [
                 [
-                    'question' => 'How to download Instagram Reels using this tool?',
-                    'answer' => 'Copy the reel URL from the Instagram app or website, paste it in the input box above, and click the "Download" button. The server processes the video in high quality and provides a direct download link.'
+                    'question' => 'How do I download an Instagram Reel?',
+                    'answer' => 'Open a public Reel in Instagram, tap Share and copy its link. Paste the link into the downloader above, select Download, then save the MP4 file to your device.'
                 ],
                 [
-                    'question' => 'Is it free to download Reels?',
-                    'answer' => 'Yes! Our Instagram Reels Downloader is 100% free. No registration, no payment, and no extension installation required.'
+                    'question' => 'Can this downloader save private Instagram Reels?',
+                    'answer' => 'No. The downloader can only access public Reels that are available without signing in. It cannot bypass private accounts, deleted posts, or Instagram access restrictions.'
                 ],
                 [
-                    'question' => 'Can I download Reels on an iPhone?',
-                    'answer' => 'Absolutely! Open our website in Safari browser, paste the copied reel link, and save it directly to your iPhone. A completely smooth experience!'
+                    'question' => 'Can I download Instagram Reels on iPhone or Android?',
+                    'answer' => 'Yes. The downloader works in current mobile browsers. On iPhone, the file normally appears in Safari Downloads or the Files app; on Android, it normally appears in the Downloads folder.'
+                ],
+                [
+                    'question' => 'What video quality will I receive?',
+                    'answer' => 'The downloader selects the best video and audio streams Instagram makes available for that Reel and combines them into a downloadable file when necessary. Available resolution varies by the original upload.'
+                ],
+                [
+                    'question' => 'Does the downloaded Reel have a watermark?',
+                    'answer' => 'The tool downloads the media stream supplied by Instagram and does not add its own watermark. Any text, logo, or watermark already embedded by the creator remains in the video.'
                 ]
             ],
             [
-                'intro' => 'The fastest Instagram Reels Downloader tool — save unlimited reels directly to your mobile gallery or desktop in HD MP4, without watermarks or brand logos.',
-                'features_title' => 'Why Choose Our Reels Downloader?',
+                'intro' => 'Save a public Instagram Reel for offline viewing in a few steps. The downloader reads the shared Reel URL, finds the best media streams Instagram exposes, and prepares a downloadable video without requiring an account on this site.',
+                'features_title' => 'What the Reel downloader offers',
                 'features' => [
-                    'Unlimited Free Downloads: Save as many Reels as you want, with no limits.',
-                    'Highest Quality: Download videos in native 1080p resolution with crystal clear audio.',
-                    'All Devices Supported: Works perfectly on iPhone, iPad, Android, and Windows PC.'
+                    'Best available quality: The tool selects the highest-quality video and audio streams available for the public Reel.',
+                    'MP4 download: Save the processed video to a phone, tablet, Windows PC, Mac, or Chromebook.',
+                    'No signup: Paste a supported public Reel URL without creating an account or installing an extension.'
+                ],
+                'steps_title' => 'How to download an Instagram Reel',
+                'steps' => [
+                    ['title' => 'Copy the Reel link', 'text' => 'Open the public Reel in the Instagram app or website, tap Share, and choose Copy link.'],
+                    ['title' => 'Paste the URL', 'text' => 'Return to this page, paste the complete Instagram Reel URL into the field above, and select Download.'],
+                    ['title' => 'Preview and save', 'text' => 'Wait while the Reel is processed, then use the download button to save the video file to your device.']
+                ],
+                'details' => [
+                    [
+                        'title' => 'Which Instagram Reel links are supported?',
+                        'body' => 'Use a direct public link containing /reel/, such as instagram.com/reel/ABC123/. Links copied from the Instagram share menu can include tracking parameters; the downloader identifies the Reel from the URL. Private, deleted, age-restricted, or region-restricted media may not be available.'
+                    ],
+                    [
+                        'title' => 'Download responsibly',
+                        'body' => 'Only download videos you created or have permission to save. Copyright and the creator’s rights still apply after a file is downloaded. This service is independent and is not affiliated with or endorsed by Instagram or Meta.'
+                    ]
                 ]
             ]
         );

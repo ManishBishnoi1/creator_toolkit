@@ -78,11 +78,9 @@ class PageController extends Controller
             ['loc' => url('/dmca'), 'changefreq' => 'monthly', 'priority' => '0.8'],
             // Programmatic SEO landing pages
             ['loc' => url('/download-instagram-reels'), 'changefreq' => 'weekly', 'priority' => '0.9'],
-            ['loc' => url('/instagram-reel-downloader'), 'changefreq' => 'weekly', 'priority' => '0.9'],
             ['loc' => url('/instagram-story-downloader'), 'changefreq' => 'weekly', 'priority' => '0.9'],
             ['loc' => url('/download-reels-without-watermark'), 'changefreq' => 'weekly', 'priority' => '0.9'],
             ['loc' => url('/instagram-video-saver'), 'changefreq' => 'weekly', 'priority' => '0.9'],
-            ['loc' => url('/instagram-video-downloader'), 'changefreq' => 'weekly', 'priority' => '0.9'],
             ['loc' => url('/instagram-photo-downloader'), 'changefreq' => 'weekly', 'priority' => '0.9'],
             ['loc' => url('/instagram-highlights-downloader'), 'changefreq' => 'weekly', 'priority' => '0.9'],
             ['loc' => url('/instagram-carousel-downloader'), 'changefreq' => 'weekly', 'priority' => '0.9'],

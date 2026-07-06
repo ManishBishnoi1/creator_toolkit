@@ -30,9 +30,6 @@
                 <p class="text-sm text-slate-600 leading-relaxed font-normal">
                     {{ $contentBlocks['intro'] ?? 'Download and save Instagram media in high quality using our optimized downloader tool. Free, secure, and compatible with all modern mobile and desktop devices.' }}
                 </p>
-                <div class="inline-block bg-blue-50 text-blue-600 text-[10px] font-bold tracking-wider uppercase px-3 py-1.5 rounded">
-                    # Downloader Tools Niche
-                </div>
             </div>
             
             <!-- 3D Instagram Icon Illustration -->
@@ -69,38 +66,33 @@
         <!-- Section 3: How to download Section (Vibrant Steps Card) -->
         <section class="bg-[#5d3be8] text-white rounded-3xl p-8 md:p-12 shadow-xl text-center space-y-10">
             <h2 class="font-display text-2xl md:text-3xl font-extrabold">
-                How to download from Instagram?
+                {{ $contentBlocks['steps_title'] ?? 'How to download from Instagram' }}
             </h2>
             
             <div class="grid md:grid-cols-3 gap-8 text-left">
-                <!-- Step 1 -->
-                <div class="space-y-2">
-                    <h4 class="font-display text-lg font-bold">1. Copy the URL</h4>
-                    <p class="text-xs text-indigo-100 leading-relaxed font-light">
-                        Open the Instagram app or website, find the Reels, Video, Story, or Photo, and copy the sharing URL link.
-                    </p>
-                </div>
-                
-                <!-- Step 2 -->
-                <div class="space-y-2">
-                    <h4 class="font-display text-lg font-bold">2. Paste the Link</h4>
-                    <p class="text-xs text-indigo-100 leading-relaxed font-light">
-                        Navigate back to our site, paste the copied link URL into the downloader input field at the top, and click the Download button.
-                    </p>
-                    <div class="inline-block bg-white/10 text-white text-[10px] font-semibold px-2.5 py-1 rounded mt-2">
-                        # Computers & Electronics
+                @foreach(($contentBlocks['steps'] ?? [
+                    ['title' => 'Copy the URL', 'text' => 'Open Instagram, choose the public media you want to save, and copy its share link.'],
+                    ['title' => 'Paste the link', 'text' => 'Paste the complete Instagram URL into the downloader field above and select Download.'],
+                    ['title' => 'Save the file', 'text' => 'Wait for processing to finish, then use the download button to save the available media.']
+                ]) as $index => $step)
+                    <div class="space-y-2">
+                        <h3 class="font-display text-lg font-bold">{{ $index + 1 }}. {{ $step['title'] }}</h3>
+                        <p class="text-xs text-indigo-100 leading-relaxed font-light">{{ $step['text'] }}</p>
                     </div>
-                </div>
-                
-                <!-- Step 3 -->
-                <div class="space-y-2">
-                    <h4 class="font-display text-lg font-bold">3. Save Media File</h4>
-                    <p class="text-xs text-indigo-100 leading-relaxed font-light">
-                        The downloader parses the content, uploads it to Cloudinary CDN, and provides a direct high-speed download link for you.
-                    </p>
-                </div>
+                @endforeach
             </div>
         </section>
+
+        @if(!empty($contentBlocks['details']))
+        <section class="grid md:grid-cols-2 gap-8" aria-label="Downloader information">
+            @foreach($contentBlocks['details'] as $detail)
+                <article class="space-y-3 text-left">
+                    <h2 class="font-display text-xl font-extrabold text-[#1e2b49]">{{ $detail['title'] }}</h2>
+                    <p class="text-sm text-slate-600 leading-relaxed">{{ $detail['body'] }}</p>
+                </article>
+            @endforeach
+        </section>
+        @endif
 
         <!-- Section 4: FAQ Accordions -->
         @if(!empty($faqs))
@@ -125,4 +117,8 @@
         </section>
         @endif
     </div>
+
+    @if(request()->routeIs('seo.reels'))
+        <x-popunder-ad />
+    @endif
 </x-layout>
