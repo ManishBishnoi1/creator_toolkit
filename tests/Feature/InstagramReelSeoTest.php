@@ -40,22 +40,4 @@ class InstagramReelSeoTest extends TestCase
             ->assertDontSee('/instagram-video-downloader');
     }
 
-    public function test_popunder_script_is_limited_to_the_home_and_reel_download_pages(): void
-    {
-        $this->get('/download-instagram-reels')
-            ->assertOk()
-            ->assertSee('elderlygoal.com/cmDD9.6Gb', false);
-
-        $this->get('/instagram-story-downloader')
-            ->assertOk()
-            ->assertDontSee('elderlygoal.com/cmDD9.6Gb', false);
-
-        $this->get('/')
-            ->assertOk()
-            ->assertSee('elderlygoal.com/cmDD9.6Gb', false);
-
-        $this->get('/about')
-            ->assertOk()
-            ->assertDontSee('elderlygoal.com/cmDD9.6Gb', false);
-    }
 }

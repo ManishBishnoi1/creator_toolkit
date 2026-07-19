@@ -117,8 +117,4 @@
         </section>
         @endif
     </div>
-
-    @if(request()->routeIs('seo.reels'))
-        <x-popunder-ad />
-    @endif
 </x-layout>
