@@ -40,4 +40,19 @@ class InstagramReelSeoTest extends TestCase
             ->assertDontSee('/instagram-video-downloader');
     }
 
+    public function test_google_ad_code_is_not_loaded_on_the_downloader_pages(): void
+    {
+        $this->get('/')
+            ->assertOk()
+            ->assertDontSee('pagead2.googlesyndication.com/pagead/js/adsbygoogle.js', false);
+
+        $this->get('/download-instagram-reels')
+            ->assertOk()
+            ->assertDontSee('pagead2.googlesyndication.com/pagead/js/adsbygoogle.js', false);
+
+        $this->get('/privacy')
+            ->assertOk()
+            ->assertSee('pagead2.googlesyndication.com/pagead/js/adsbygoogle.js', false);
+    }
+
 }

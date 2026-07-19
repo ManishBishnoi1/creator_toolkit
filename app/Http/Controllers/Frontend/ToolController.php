@@ -18,6 +18,7 @@ class ToolController extends Controller
     {
         $request->validate([
             'url' => 'required|url|string',
+            'authorization' => 'accepted',
         ]);
 
         try {

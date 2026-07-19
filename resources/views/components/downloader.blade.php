@@ -44,6 +44,10 @@
                 Download
             </button>
         </form>
+        <label class="mt-3 flex items-start gap-2 text-left text-[11px] leading-relaxed text-white/85 cursor-pointer">
+            <input x-model="authorization" type="checkbox" required class="mt-0.5 rounded border-white/50 bg-white text-[#e60067] focus:ring-[#e60067]">
+            <span>I confirm that I own this content or have permission from the copyright owner to save it.</span>
+        </label>
         <button type="button" @click="pasteLink" class="mt-3 text-xs text-white/80 hover:text-white hover:underline flex items-center gap-1 pl-1 cursor-pointer mx-auto justify-center">
             <span class="material-symbols-outlined text-[14px]">content_paste</span> Paste from clipboard
         </button>
@@ -120,6 +124,7 @@
             error: false,
             errorMessage: '',
             result: null,
+            authorization: false,
 
             pasteLink() {
                 navigator.clipboard.readText().then(text => {
@@ -143,7 +148,7 @@
                         'X-CSRF-TOKEN': csrfToken,
                         'Accept': 'application/json'
                     },
-                    body: JSON.stringify({ url: this.url })
+                    body: JSON.stringify({ url: this.url, authorization: this.authorization })
                 })
                 .then(response => {
                     if (!response.ok) {
@@ -172,6 +177,7 @@
                 this.result = null;
                 this.error = false;
                 this.errorMessage = '';
+                this.authorization = false;
             }
         };
     }

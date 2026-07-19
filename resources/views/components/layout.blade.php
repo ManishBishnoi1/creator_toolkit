@@ -11,10 +11,12 @@
       gtag('config', 'G-1EF1YE1HFX');
     </script>
 
-    <!-- Google AdSense -->
+    <!-- Keep Google-served ads off downloader and conversion screens. -->
     <meta name="google-adsense-account" content="ca-pub-1613230266484965">
+    @if(request()->getPathInfo() !== '/' && !request()->routeIs('seo.*', 'tools.*'))
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1613230266484965"
      crossorigin="anonymous"></script>
+    @endif
 
         <!-- Microsoft Clarity -->
         <script>

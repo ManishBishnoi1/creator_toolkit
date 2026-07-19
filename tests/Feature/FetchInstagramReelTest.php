@@ -37,6 +37,7 @@ class FetchInstagramReelTest extends TestCase
         // Request POST to downloader route
         $response = $this->postJson(route('tools.instagram-reel'), [
             'url' => 'https://www.instagram.com/reel/C9xYzABC123/',
+            'authorization' => true,
         ]);
 
         $response->assertStatus(200)
@@ -68,5 +69,15 @@ class FetchInstagramReelTest extends TestCase
 
         $response->assertStatus(422)
             ->assertJsonStructure(['message', 'errors']);
+    }
+
+    public function test_downloader_requires_confirmation_of_content_authorization(): void
+    {
+        $response = $this->postJson(route('tools.instagram-reel'), [
+            'url' => 'https://www.instagram.com/reel/C9xYzABC123/',
+        ]);
+
+        $response->assertStatus(422)
+            ->assertJsonValidationErrors('authorization');
     }
 }
