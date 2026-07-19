@@ -81,6 +81,8 @@ class InstagramScraperService
             '--write-thumbnail',
             '-f',
             'bestvideo+bestaudio/best',
+            '--merge-output-format',
+            'mp4',
             '-o',
             $outputPath,
             $url
@@ -159,6 +161,23 @@ class InstagramScraperService
                 }
                 
                 throw new ToolExecutionException("Instagram scraping failed. Please check the URL and try again.", 400);
+            }
+
+            $processOutput = $process->getOutput() . "\n" . $process->getErrorOutput();
+            if (preg_match('/ffmpeg[^\n]*(not found|unavailable|not installed)|requested merging[^\n]*ffmpeg/i', $processOutput)) {
+                Log::error("Instagram Reel audio merge failed because FFmpeg is unavailable", [
+                    'url' => $url,
+                    'output' => trim($processOutput),
+                ]);
+
+                throw new ToolExecutionException(
+                    'The downloader could not merge the Reel audio. Please configure FFmpeg on the server and try again.',
+                    500
+                );
+            }
+
+            if (!file_exists($mp4File)) {
+                throw new ToolExecutionException('The downloader did not create a merged MP4 file. Please try again.', 500);
             }
 
             if (!file_exists($jsonFile)) {
